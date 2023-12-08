@@ -1,0 +1,33 @@
+.link {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.link__icon {
+    display: block;
+
+    width: 2.6rem;
+    height: 2.6rem;
+    padding-bottom: 2px;
+
+    fill: var(--c-white);
+    transition: fill 0.3s ease;
+}
+
+.link__text {
+    display: block;
+    color: var(--c-white);
+    font: var(--font-24-mff);
+    transition: color 0.3s ease;
+}
+
+@media (any-hover: hover) {
+    .link:hover .link__icon {
+        fill: var(--c-accent);
+    }
+
+    .link:hover .link__text {
+        color: var(--c-accent);
+    }
+}

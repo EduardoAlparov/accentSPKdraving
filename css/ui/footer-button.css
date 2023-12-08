@@ -1,0 +1,23 @@
+.footer-button {
+  width: 100%;
+  max-width: 100%;
+  padding: 1.5rem;
+
+  color: var(--c-white);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  font-family: var(--second-ff);
+  line-height: 1.25;
+  text-align: center;
+
+  background-color: var(--c-accent);
+  transition: 0.2s ease;
+}
+
+@media (any-hover: hover) {
+  .footer-button:hover {
+    color: var(--c-heading);
+    background-color: var(--c-white);
+  }
+}

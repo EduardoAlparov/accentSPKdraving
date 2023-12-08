@@ -1,0 +1,47 @@
+.plus {
+  width: max-content;
+}
+
+.plus__body {
+  position: relative;
+}
+
+.plus .construction__number-value::before {
+  content: none;
+}
+
+.plus__number {
+  position: relative;
+  top: unset;
+  left: unset;
+}
+
+.plus__text {
+  position: absolute;
+  left: 8.6rem;
+  bottom: 0;
+  z-index: 10;
+
+  color: var(--c-heading);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 100%;
+}
+
+.plus__text::before {
+  position: absolute;
+  top: 1rem;
+  left: -2.5rem;
+  z-index: 1;
+
+  display: block;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: var(--c-accent);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  content: "";
+}

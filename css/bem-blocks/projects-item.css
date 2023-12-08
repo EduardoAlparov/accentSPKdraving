@@ -1,0 +1,248 @@
+.projects-item__title.section__title {
+    font: var(--font-48-mff);
+    max-width: 110rem;
+}
+
+.projects-item__content {
+    padding-bottom: 10rem;
+}
+
+.projects-item__head {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+
+    margin-bottom: 10rem;
+}
+
+.projects-item__image--wrapper {
+    flex: 1 0 58rem;
+}
+
+.projects-item__image {
+    position: relative;
+
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.55%;
+
+    background-color: var(--c-border);
+}
+
+.projects-item__image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    min-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: translate(-50%, -50%);
+}
+
+.projects-item__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projects-item__info-title {
+    margin-bottom: 2rem;
+    color: var(--c-heading);
+    font: var(--font-34-mff);
+    line-height: 130%;
+}
+
+.projects-item__info-date {
+    margin-bottom: 1rem;
+
+    font: var(--font-16-sff-lhb);
+    font-weight: 600;
+}
+
+.projects-item__info-text {
+    font: var(--font-16-sff-lhb);
+}
+
+@media (max-width : 768px) {
+    .projects-item__head {
+        flex-direction: column;
+
+        margin-bottom: 5rem;
+    }
+
+    .projects-item__image--wrapper {
+        flex: 1 0 auto;
+    }
+}
+
+.projects-item__middle {
+    margin-bottom: 10rem;
+}
+
+.projects-item__middle-title {
+    margin-bottom: 4rem;
+
+    color: var(--c-heading);
+    font: var(--font-34-mff);
+    line-height: 130%;
+}
+
+.projects-item__list {
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem 2rem;
+}
+
+.projects-item__list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.projects-item__item-image-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.projects-item__item-image {
+    position: relative;
+
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding-bottom: 71.3%;
+
+    background-color: var(--c-border);
+}
+
+.projects-item__item-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    min-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: translate(-50%, -50%);
+}
+
+.projects-item__item-type {
+    margin-bottom: 1rem;
+
+    color: var(--c-heading);
+    font: var(--font-20-sff-sb);
+}
+
+.projects-item__item-desc {
+    font: var(--font-16-sff-lhb);
+}
+
+@media (max-width : 992px) {
+    .projects-item__list {
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+
+@media (max-width : 576px) {
+    .projects-item__list {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2rem;
+    }
+}
+
+.projects-item__review {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+}
+
+.projects-item__review-foto-wrapper {
+    flex: 0 0 34rem;
+}
+
+.projects-item__review-foto {
+    position: relative;
+
+    width: 100%;
+    height: 0;
+    padding-top: 89.4%;
+
+    background-color: var(--c-border);
+}
+
+.projects-item__review-foto img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    min-width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: translate(-50%, -50%);
+}
+
+.projects-item__review-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 auto;
+}
+
+.projects-item__review-name,
+.projects-item__review-text,
+.projects-item__review-date {
+    margin-bottom: 2rem;
+
+    font: var(--font-16-sff-lhb);
+}
+
+.projects-item__review-title {
+    margin-bottom: 1rem;
+
+    color: var(--c-heading);
+    font: var(--font-34-mff);
+}
+
+.projects-item__review-text {
+    max-width: 94rem;
+    margin-bottom: 1rem;
+}
+
+.projects-item__review-name {
+    font-style: italic;
+}
+
+@media (max-width : 768px) {
+    .projects-item__middle {
+        margin-bottom: 5rem;
+    }
+
+    .projects-item__content {
+        padding-bottom: 5rem;
+    }
+
+    .projects-item__review {
+        flex-direction: column;
+    }
+
+    .projects-item__review-foto-wrapper {
+        flex: 1 0 auto;
+    }
+}

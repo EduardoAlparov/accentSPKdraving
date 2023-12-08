@@ -1,0 +1,29 @@
+.login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  max-width: 6rem;
+  max-height: 6rem;
+  transition: background-color 0.3s ease-out;
+}
+
+.login-button .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  stroke: var(--c-heading);
+  transition: stroke 0.3s ease-out;
+}
+
+@media (any-hover: hover) {
+  .login-button:hover {
+    background-color: var(--c-heading);
+  }
+
+  .login-button:hover .icon {
+    stroke: var(--c-white);
+  }
+}

@@ -1,0 +1,84 @@
+.video-button {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+
+  width: max-content;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.video-button--column {
+  flex-direction: column;
+}
+
+.video-button__icon {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 6rem;
+  height: 6rem;
+
+  background-color: var(--c-accent);
+  border-radius: 100%;
+
+  transition: background-color 0.3s ease;
+}
+
+
+.video-button__icon::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+
+  width: 8rem;
+  height: 8rem;
+
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #D9D9D9;
+
+  transform: translate(-50%, -50%);
+  content: "";
+}
+
+.video-button__icon .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+
+  width: 1.4rem;
+  height: 1.4rem;
+
+  fill: var(--c-white);
+
+  transform: translate(-40%, -50%);
+}
+
+.video-button__icon--big .icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  transform: translate(-50%, -50%);
+}
+
+.video-button__text {
+  color: var(--c-heading);
+  font: var(--font-16-sff-m);
+  font-weight: 600;
+}
+
+.video-button--column .video-button__text {
+  margin-top: 2rem;
+
+  text-align: center;
+}
+
+@media (any-hover: hover) {
+  .video-button:hover .video-button__icon {
+    background-color: var(--c-heading);
+  }
+}

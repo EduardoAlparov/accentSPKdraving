@@ -1,0 +1,254 @@
+.balloon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+
+    display: none;
+
+    width: 100%;
+    max-width: 58rem;
+    transform: translate(-15%, -50%);
+}
+
+.balloon.is-open {
+    display: block;
+}
+
+.balloon__body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 19.6rem;
+
+    background-color: var(--c-white);
+    filter: drop-shadow(4px 6px 30px rgba(26, 23, 23, 0.2));
+}
+
+.balloon__body::before {
+    position: absolute;
+    top: 50%;
+    right: calc(100% - 1px);
+    z-index: 1;
+
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #FFFFFF transparent transparent;
+    transform: rotate(0deg) translateY(-50%);
+    content: "";
+}
+
+
+@media (max-width : 768px) {
+    .balloon {
+        max-width: 45rem;
+        transform: translate(-50%, -50%);
+    }
+
+    .balloon__body::before {
+        content: none;
+    }
+}
+
+.balloon__title {
+    display: block;
+    margin-bottom: 1.2rem;
+    padding: 2rem 2rem 1.2rem;
+
+    color: var(--c-heading);
+    font: var(--font-34-mff);
+    line-height: 100%;
+    text-align: center;
+
+    border: 1px solid #D9D9D9;
+    border-width: 0 0 1px 0;
+}
+
+.balloon__content {
+    padding: 1rem 2rem 2rem;
+}
+
+
+.balloon--desc .balloon__header {
+    display: none;
+}
+
+
+.balloon__list-link,
+.balloon__desc-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.balloon__simple-item {
+    position: relative;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 2rem;
+
+    cursor: pointer;
+}
+
+.balloon__simple-cover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background: rgba(23, 22, 21, 0.8);
+
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+}
+
+.balloon__simple-name {
+    display: block;
+    padding: 2rem  0;
+
+    color: var(--c-heading);
+    font: var(--font-26-mff);
+}
+
+.balloon__simple-date,
+.balloon__simple-text {
+    font: var(--font-14-sff);
+    line-height: 160%;
+}
+
+.balloon__simple-top {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.balloon__simple-image-wrapper {
+    flex: 1 0 28rem;
+}
+
+.balloon__simple-image {
+    position: relative;
+
+    width: 100%;
+    height: 0;
+    padding-top: 71.5%;
+
+    background-color: var(--c-grey);
+}
+
+.balloon__simple-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    min-width: 100%;
+    /* height: 100%; */
+
+    object-fit: cover;
+    object-position: center;
+
+    transform: translate(-50%, -50%);
+}
+
+.balloon--desc .balloon__content {
+    padding: 2rem;
+}
+
+.balloon--desc .balloon__simple-item {
+    margin-bottom: 4rem;
+    padding-bottom: 4rem;
+}
+
+.balloon--simple .balloon__simple-top {
+    align-items: center;
+}
+
+.balloon--simple .balloon__simple-date {
+    display: none;
+}
+
+.balloon--simple .balloon__simple-text {
+    display: none;
+}
+
+.balloon--simple .balloon__desc-link {
+    display: none;
+}
+
+.balloon--simple .balloon__simple-image-wrapper {
+    flex: 0 0 14rem;
+}
+
+.balloon__simple-icon-text {
+    position: relative;
+
+    padding-left: 4.6rem;
+
+    color: var(--c-white);
+    font: var(--font-24-mff);
+    white-space: nowrap;
+}
+
+.balloon__simple-icon-text .icon {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+
+    display: block;
+
+    width: 2.6rem;
+    height: 2.6rem;
+
+    fill: var(--c-white);
+
+    transform: translateY(-55%);
+    content: "";
+}
+
+.balloon--simple .balloon__simple-item:hover .balloon__simple-cover {
+    opacity: 1;
+}
+
+.balloon__list-wrapper {
+    display: none;
+    padding-bottom: 5rem;
+}
+
+.balloon--list .balloon__simple-item--hide {
+    display: none;
+}
+
+.balloon--list .balloon__list-wrapper {
+    display: block;
+}
+
+.balloon--list .balloon__title {
+    margin-bottom: 0;
+}
+
+.balloon__item {
+    padding: 1rem 0;
+    border: 1px solid #D9D9D9;
+    border-width: 0 0 1px 0;
+}
+
+.balloon__item:first-child {
+    padding: 0 0 1rem;
+}
+
+.balloon__item:last-child {
+    padding: 1rem 0 0;
+    border-width: 0;
+}

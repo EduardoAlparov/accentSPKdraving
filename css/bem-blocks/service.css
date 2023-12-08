@@ -1,0 +1,20 @@
+.service {
+  display: flex;
+  align-items: center;
+}
+
+.service__marker {
+  display: block;
+
+  flex-shrink: 0;
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 1rem;
+
+  background-color: var(--c-accent);
+  border-radius: 100%;
+}
+
+.service__text {
+  font-weight: 400;
+}

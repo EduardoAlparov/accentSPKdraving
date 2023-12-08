@@ -1,0 +1,42 @@
+.contact-button {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.contact-button:disabled {
+  pointer-events: none;
+}
+
+.contact-button__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  stroke: var(--c-accent);
+  transition: stroke 0.3s ease-out;
+}
+
+.contact-button__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  color: var(--c-heading);
+  font-weight: 600;
+  font-family: var(--second-ff);
+  transition: color 0.3s ease-out;
+}
+
+@media (any-hover: hover) {
+  .contact-button:hover {
+    background-color: var(--c-accent);
+  }
+
+  .contact-button:hover .contact-button__icon {
+    stroke: var(--c-white);
+  }
+
+  .contact-button:hover .contact-button__text {
+    color: var(--c-white);
+  }
+}

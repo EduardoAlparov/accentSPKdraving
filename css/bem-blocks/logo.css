@@ -1,0 +1,23 @@
+.logo {
+  display: block;
+
+  width: 18rem;
+  height: 4.2rem;
+}
+
+.logo--bigger {
+  width: 22rem;
+  height: 5.5rem;
+}
+
+@media (max-width : 768px) {
+  .logo {
+    width: 14rem;
+    height: 3.2rem;
+  }
+
+  .logo--bigger {
+    width: 22rem;
+    height: 5.5rem;
+  }
+}

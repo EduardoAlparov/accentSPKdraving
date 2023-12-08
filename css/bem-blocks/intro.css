@@ -1,0 +1,179 @@
+.intro {
+  position: relative;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+
+  color: var(--c-white);
+}
+
+.intro__background-slider {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
+  height: 100%;
+}
+
+.intro__head {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 40;
+  width: 100%;
+  height: 50%;
+}
+
+.intro__site-container {
+  position: relative;
+  z-index: 40;
+  height: 100%;
+}
+
+.intro__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 100%;
+}
+
+.intro__title {
+  white-space: nowrap;
+}
+
+.intro__subtitle {
+  display: block;
+  margin-top: -1rem;
+
+  font: var(--font-24-sff);
+}
+
+.intro__row {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.intro__link {
+  flex-shrink: 0;
+  max-width: 38%;
+  margin-right: 5.2rem;
+}
+
+.intro__link.main-button {
+  font: var(--font-34-mff);
+}
+
+.intro__services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 4rem;
+  gap: 2rem 4rem;
+}
+
+.intro__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+
+  width: 100%;
+  height: 50%;
+  max-height: 48rem;
+}
+
+
+.intro__thumbs {
+  height: 100%;
+}
+
+/* foto slider */
+.background-slider {
+  position: relative;
+  height: 100%;
+}
+
+.background-slider__list {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+.background-slider__slide {
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.background-slider__slide img {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.background-slider::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(0deg, rgba(23, 22, 21, 0.6), rgba(23, 22, 21, 0.6));
+}
+
+@media (max-width : 1620px) {
+	.intro__site-container {
+		max-width: 74%;
+    padding: 0;
+	}
+}
+
+@media (max-height: 800px)  {
+  .intro__navigation {
+    max-height: 42rem;
+  }
+}
+
+@media (max-width : 992px) {
+	.intro__site-container {
+		max-width: 95%;
+    padding: 0;
+	}
+}
+
+@media (max-width : 768px) {
+  .intro__title {
+    white-space: unset;
+  }
+
+  .intro__row {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+@media (max-width : 576px) {
+  .intro__navigation {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

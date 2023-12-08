@@ -1,0 +1,67 @@
+.btn-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 19px;
+    padding: 2.8rem 1rem;
+
+    background-color: transparent;
+    border: none;
+    color: inherit;
+
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.btn-menu:focus {
+    outline: none;
+}
+
+.btn-menu__text {
+    margin-left: 10px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.btn-menu__bars {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: var(--c-heading);
+    transition: .3s;
+}
+
+.btn-menu__bars::before, .btn-menu__bars::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--c-heading);
+    transition: .3s;
+}
+
+.btn-menu__bars::before {
+    transform: translate(0, -8px);
+}
+
+.btn-menu__bars::after {
+    transform: translate(0, 8px);
+}
+
+
+.menu-open .btn-menu .btn-menu__bars {
+    background-color: transparent;
+}
+
+.menu-open .btn-menu .btn-menu__bars::before {
+    transform: rotate(45deg);
+}
+
+.menu-open .btn-menu .btn-menu__bars::after {
+    transform: rotate(-45deg);
+}

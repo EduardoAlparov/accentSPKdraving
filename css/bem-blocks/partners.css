@@ -1,0 +1,144 @@
+.partners {
+    padding: 10rem 0;
+}
+
+.partners__heading.section__heading {
+    padding: 0;
+}
+
+.partners__slider {
+    position: relative;
+    padding: 4rem 0;
+}
+
+.partners__swiper-wrapper {
+    align-items: center;
+}
+
+.partners__swiper-slide.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.partners__swiper-button.swiper-button-prev,
+.partners__swiper-button.swiper-button-next {
+    top: unset !important;
+    bottom: 100% !important;
+}
+
+.partners__swiper-button.slider-about__button {
+    background-color: transparent;
+    border: 1px solid var(--c-border);
+}
+
+.partners__swiper-button.slider-about__button .icon {
+    fill: var(--c-heading);
+}
+
+.partners__swiper-button.slider-about__button:disabled {
+    pointer-events: none;
+}
+
+.partners__swiper-button.slider-about__button:disabled .icon{
+    fill: var(--c-border);
+}
+
+.partners__link-wrapper {
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem 6.2rem;
+    padding: 4rem 0;
+}
+
+.partners__body--list {
+    display: none;
+}
+
+.partners__list .partners__item {
+    width: calc(100% / 5 - 4.96rem);
+}
+
+.partner {
+    height: 100%;
+}
+
+.partner img {
+    display: block;
+
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.reviews__swiper-pagination.swiper-pagination,
+.licenses__swiper-pagination.swiper-pagination,
+.partners__swiper-pagination.swiper-pagination {
+    top: unset !important;
+    bottom: 0;
+}
+
+.reviews__swiper-pagination.swiper-pagination-progressbar,
+.licenses__swiper-pagination.swiper-pagination-progressbar,
+.partners__swiper-pagination.swiper-pagination-progressbar {
+    background: var(--c-border);
+}
+
+.reviews__swiper-pagination .swiper-pagination-progressbar-fill,
+.licenses__swiper-pagination .swiper-pagination-progressbar-fill,
+.partners__swiper-pagination .swiper-pagination-progressbar-fill {
+    top: -1px !important;
+    height: 2px !important;
+    background: var(--c-accent) !important;
+}
+
+
+@media (any-hover: hover) {
+    .partners__swiper-button.slider-about__button:hover {
+        background-color: var(--c-heading);
+        border-color: transparent;
+    }
+
+    .partners__swiper-button.slider-about__button:hover .icon {
+        fill: var(--c-white);
+    }
+}
+
+@media (max-width : 992px) {
+    .partners {
+        padding: 5rem 0;
+    }
+
+    .partners__swiper-button--prev,
+    .partners__swiper-button--next {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .partners__list {
+        gap: 4rem 2rem;
+        padding: 4rem 0;
+    }
+
+    .partners__list .partners__item {
+        width: calc(100% / 3 - 1.34rem);
+    }
+}
+
+@media (max-width : 576px) {
+    .partners__list {
+        gap: 2rem;
+    }
+
+    .partners__list .partners__item {
+        width: calc(100% / 2 - 1rem);
+    }
+}

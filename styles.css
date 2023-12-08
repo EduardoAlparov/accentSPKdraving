@@ -1,0 +1,72 @@
+/* RESET, NORMALIZE, GLOBAL STYLES: */
+@import url('./css/normalize.css');
+@import url('./css/reset.css');
+@import url('./css/global.css');
+@import url('./css/commons.css');
+
+/* FONTS LOAD SECTION: */
+@import url('./css/fonts.css');
+
+/* LAYOUTS STYLES: */
+@import url('./css/layout/wrapper.css');
+@import url('./css/layout/section.css');
+@import url('./css/layout/container.css');
+@import url('./css/layout/header.css');
+@import url('./css/layout/main.css');
+@import url('./css/layout/footer.css');
+@import url('./css/layout/modal.css');
+@import url('./css/layout/grid.css');
+
+/* UI STYLES: */
+@import url('./css/ui/visually-hidden.css');
+@import url('./css/ui/contact-button.css');
+@import url('./css/ui/btn-menu.css');
+@import url('./css/ui/login-button.css');
+@import url('./css/ui/icon-link.css');
+@import url('./css/ui/titles.css');
+@import url('./css/ui/main-button.css');
+@import url('./css/ui/footer-button.css');
+@import url('./css/ui/secondary-button.css');
+@import url('./css/ui/video-button.css');
+@import url('./css/ui/input-block.css');
+@import url('./css/ui/licenses-item.css');
+@import url('./css/ui/link.css');
+@import url('./css/ui/yamaps-icon.css');
+
+/* BEM BLOCKS: */
+@import url('./css/bem-blocks/logo.css');
+@import url('./css/bem-blocks/breadcrumbs.css');
+@import url('./css/bem-blocks/menu.css');
+@import url('./css/bem-blocks/search.css');
+@import url('./css/bem-blocks/contacts.css');
+@import url('./css/bem-blocks/catalogs.css');
+@import url('./css/bem-blocks/developer.css');
+@import url('./css/bem-blocks/intro.css');
+@import url('./css/bem-blocks/service.css');
+@import url('./css/bem-blocks/thumbs.css');
+@import url('./css/bem-blocks/constructions.css');
+@import url('./css/bem-blocks/about.css');
+@import url('./css/bem-blocks/slider-about.css');
+@import url('./css/bem-blocks/plus.css');
+@import url('./css/bem-blocks/advantage.css');
+@import url('./css/bem-blocks/reasons.css');
+@import url('./css/bem-blocks/proposal.css');
+@import url('./css/bem-blocks/estimate.css');
+@import url('./css/bem-blocks/projects.css');
+@import url('./css/bem-blocks/project.css');
+@import url('./css/bem-blocks/partners.css');
+@import url('./css/bem-blocks/licenses.css');
+@import url('./css/bem-blocks/feedback.css');
+@import url('./css/bem-blocks/review.css');
+@import url('./css/bem-blocks/faq.css');
+@import url('./css/bem-blocks/info.css');
+@import url('./css/bem-blocks/sidebar.css');
+@import url('./css/bem-blocks/callback.css');
+@import url('./css/bem-blocks/article.css');
+@import url('./css/bem-blocks/certificates.css');
+@import url('./css/bem-blocks/reviews-page.css');
+@import url('./css/bem-blocks/callback-form.css');
+@import url('./css/bem-blocks/contacts-page.css');
+@import url('./css/bem-blocks/about-page.css');
+@import url('./css/bem-blocks/projects-item.css');
+@import url('./css/bem-blocks/balloon.css');

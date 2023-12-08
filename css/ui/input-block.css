@@ -1,0 +1,42 @@
+.input-block__textarea,
+.input-block__input {
+  width: 100%;
+  min-height: 6rem;
+  padding: 1.7rem 2rem;
+
+  font-weight: 400;
+  font-size: 2rem;
+  font-family: var(--second-ff);
+  line-height: 120%;
+
+  background-color: var(--c-white);
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-heading);
+}
+
+.input-block__textarea {
+  height: 12rem;
+  resize: none;
+}
+
+.input-block__input.input-block__input--invalid {
+  border-color: var(--c-accent);
+}
+
+.input-block__input.input-block__input--invalid::placeholder {
+  color: var(--c-accent);
+}
+
+.input-block__input::placeholder {
+  color: var(--c-text);
+  font-weight: 400;
+  font-size: 2.4rem;
+  font-family: var(--main-ff);
+  line-height: 100%;
+}
+
+.input-block__input--light {
+  border-color: var(--c-border);
+}

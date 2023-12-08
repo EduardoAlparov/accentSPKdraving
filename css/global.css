@@ -1,0 +1,129 @@
+/* USER VARIABLES SECTION: */
+:root {
+  /* colors: */
+	--c-accent: #f14c1c;
+	--c-heading: #171615;
+	--c-text: #747373;
+	--c-border: #d9d9d9;
+	--c-border-2:  rgba(255, 255, 255, 0.1);
+	--c-border-3:  rgba(255, 255, 255, 0.2);
+	--c-back: #f9f9f9;
+	--c-back-2: rgba(247, 221, 194, 0.5);
+	--c-white: #fff;
+	--c-grey: #c2bebe;
+
+  /* fonts prop-s: */
+	--regular-text: 10px;
+	--lineheight: 1.25;
+	--main-ff: "Bebas Neue";
+	--second-ff: "Montserrat";
+	--font-body: 400 1.6rem/160% var(--main-ff);
+	--systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+	/* fonts types: */
+		/* main font family: */
+	--font-74-mff: 700 7.4rem/100% var(--main-ff);
+	--font-64-mff: 700 6.4rem/120% var(--main-ff);
+	--font-63-mff: 700 6.3rem/120% var(--main-ff);
+	--font-48-mff: 700 4.8rem/108% var(--main-ff);
+	--font-36-mff: 700 3.6rem/130% var(--main-ff);
+	--font-34-mff: 700 3.4rem/108% var(--main-ff);
+	--font-34-mff-r: 400 3.4rem/130% var(--main-ff);
+	--font-26-mff: 700 2.6rem/108% var(--main-ff);
+	--font-24-mff: 700 2.4rem/108% var(--main-ff);
+		/* secondary font family: */
+	--font-24-sff: 600 2.4rem/160% var(--second-ff);
+	--font-20-sff: 400 2rem/120% var(--second-ff);
+	--font-20-sff-sb: 600 2rem/120% var(--second-ff);
+	--font-16-sff-m: 500 1.6rem/125% var(--second-ff);
+	--font-16-sff-lhb: 400 1.6rem/160% var(--second-ff);
+	--font-14-sff: 400 1.4rem/120% var(--second-ff);
+
+  /* others: */
+	--swiper-pagination-progressbar-size: 1px;
+	--swiper-pagination-color: #fff;
+	--swiper-navigation-sides-offset: 2rem;
+	--swiper-pagination-progressbar-bg-color: rgba(255, 255, 255, 0.2);
+  	--header-height: 13.4rem;
+
+	--top-balloon: 0;
+	--left-balloon: 0;
+}
+
+html {
+	height: 100%;
+	font-size: var(--regular-text);
+	line-height: var(--lineheight);
+}
+
+body {
+  	height: 100%;
+	min-width: 320px;
+
+	position: relative;
+	overflow-x: hidden;
+
+	color: var(--c-text);
+	font: var(--font-body);
+
+	text-rendering: optimizeSpeed;
+  	scroll-behavior: smooth;
+}
+
+body.modal-opened {
+	overflow: hidden;
+}
+
+body.secondary-page {
+	background-color: var(--c-back);
+}
+
+.white-wrapper {
+	padding: 10rem 0;
+	background-color: var(--c-white);
+}
+
+.grey-wrapper {
+	padding: 10rem 0 20rem;
+	background-color: var(--c-back);
+}
+
+@media (max-width : 768px) {
+	.white-wrapper {
+		padding: 5rem 0;
+	}
+
+	.grey-wrapper {
+		padding: 5rem 0 10rem;
+	}
+}
+
+@media (max-width : 1510px) {
+	:root {
+		--regular-text: 8px;
+	}
+}
+
+@media (max-width : 992px) {
+	:root {
+		--regular-text: 6px;
+	}
+}
+
+@media (max-width : 768px) {
+	:root {
+		--font-74-mff: 700 6.4rem/100% var(--main-ff);
+		--font-64-mff: 700 5.4rem/120% var(--main-ff);
+		--font-63-mff: 700 5.3rem/120% var(--main-ff);
+		--font-34-mff: 700 3rem/108% var(--main-ff);
+		--font-34-mff-r: 400 3rem/130% var(--main-ff);
+
+		--header-height: 6.5rem;
+	}
+}
+
+@media (max-width : 376px) {
+	:root {
+		--regular-text: 5px;
+	}
+}

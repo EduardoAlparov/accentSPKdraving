@@ -1,0 +1,16 @@
+.licenses__swiper-wrapper {
+    padding-top: 2rem;
+    align-items: stretch;
+}
+
+.licenses__slider {
+    padding: 2rem 0 4rem;
+}
+
+@media (max-width : 992px) {
+    .licenses__swiper-button--prev,
+    .licenses__swiper-button--next {
+        opacity: 0;
+        visibility: hidden;
+    }
+}

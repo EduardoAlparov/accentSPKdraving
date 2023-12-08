@@ -1,0 +1,145 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+
+    background-color: var(--c-white);
+    border-width: 1px 0 1px 0;
+    border-style: solid;
+    border-color: var(--c-border);
+
+    transition: 0.5s ease;
+}
+
+.header__row {
+    display: flex;
+    align-items: stretch;
+
+    border-width: 0 1px 0 1px;
+    border-style: solid;
+    border-color: var(--c-border);
+}
+
+.header__over {
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: var(--c-border);
+}
+
+.header__cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
+
+    border-width: 0 1px 0 0;
+    border-style: solid;
+    border-color: var(--c-border);
+}
+
+.header__cell:last-child {
+    border-width: 0;
+}
+
+.header__logo {
+    max-width: 37rem;
+    padding: 1.3rem 0 1.5rem;
+}
+
+.header__informations {
+    display: flex;
+    align-items: center;
+    column-gap: 4rem;
+
+    max-width: 56rem;
+}
+
+.header__link {
+    max-width: 7rem;
+}
+
+.header__button {
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+.header__search-wrapper {
+    position: relative;
+
+    display: flex;
+    align-items: stretch;
+}
+
+.header__search {
+    flex-grow: 0;
+}
+
+.header__login {
+    flex: 0 0 6rem;
+}
+
+
+@media (max-width : 1200px) {
+    .header__menu {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width : 992px) {
+    .header__informations {
+        display: none;
+    }
+}
+
+
+@media (max-width : 768px) {
+    .header__site-container {
+        display: flex;
+        align-items: stretch;
+    }
+
+    .header__search,
+    .header__link.contact-button {
+        display: none;
+    }
+
+    .header__cell,
+    .header__row {
+        flex: 1 0 auto;
+    }
+
+    .header__row:last-child {
+        border-width: 0;
+    }
+
+    .header__row.header__under {
+        flex: 0 1 auto;
+        border-width: 0 1px 0 0;
+    }
+
+    .header__menu {
+        justify-content: flex-end;
+        border-width: 0;
+    }
+}
+
+@media (max-width : 576px) {
+    .header__logo {
+        max-width: unset;
+        padding: 1.3rem 0;
+    }
+
+    .contact-button.header__button {
+        display: none;
+    }
+}
+
+@media (min-width : 992px) {
+    .header.header--hide .header__under {
+        display: none;
+    }
+}

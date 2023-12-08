@@ -1,0 +1,2677 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta
+        charset="utf-8">
+        <!-- <base href="/"> -->
+        <title>СПК Дрейвинг</title>
+        <meta name="description" content="Simple Starter Description">
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" href="images/favicon.png">
+        <meta property="og:image" content="images/preview.jpg">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+        <script
+            src="https://api-maps.yandex.ru/2.1/?apikey=d02525f1-2a0d-4700-a5e1-e4487f06702c&?apikey=d02525f1-2a0d-4700-a5e1-e4487f06702c&load=package.full&lang=ru-RU"
+            type="text/javascript"
+            defer></script>
+        <script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+        <script src="js/common.js" defer></script>
+    </head>
+    <body class="preload">
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__site-container">
+                    <div class="header__row header__over">
+                        <div class="header__logo header__cell">
+                            <a href="/" class="logo">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#logo"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__cell header__informations">
+                            <button type="button" disabled class="contact-button">
+                                <span class="contact-button__icon">
+                                    <svg class="icon icon-clock">
+                                        <use xlink:href="./images/sprite.svg#clock"></use>
+                                    </svg>
+                                </span>
+                                <span class="contact-button__text">
+                                    <span>
+                                        Пн-Пт: 09:00-18:00
+                                    </span>
+                                    <span>
+                                        Сб-Вс: выходной
+                                    </span>
+                                </span>
+                            </button>
+                            <button type="button" disabled class="contact-button">
+                                <span class="contact-button__icon">
+                                    <svg class="icon">
+                                        <use xlink:href="./images/sprite.svg#locmarker"></use>
+                                    </svg>
+                                </span>
+                                <span class="contact-button__text">
+                                    <span>
+                                        РТ, г. Казань,
+                                    </span>
+                                    <span>
+                                        ул. Салимжанова, д. 23
+                                    </span>
+                                </span>
+                            </button>
+                        </div>
+                        <a href="#" class="header__cell header__link contact-button">
+                            <span class="contact-button__icon">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#evenlop"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <a href="#" class="header__cell header__link contact-button">
+                            <span class="contact-button__icon">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#chat"></use>
+                                </svg>
+                            </span>
+                        </a>
+                        <button data-target="callback" class="header__cell contact-button header__button js-modal-btn" type="button">
+                            <span class="contact-button__icon">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#phone"></use>
+                                </svg>
+                            </span>
+                            <span class="contact-button__text">
+                                <span>
+                                    8 (800) 555-32-68
+                                </span>
+                                <span>
+                                    Заказать звонок
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="header__row header__under">
+                        <div class="header__search-wrapper header__cell">
+                            <nav class="header__menu header__cell menu">
+                                <ul class="menu__list">
+                                    <li class="menu__item menu__item--dropdown">
+                                        <a href="#" class="menu__link">Противопожарные конструкции</a>
+                                        <div class="menu__dropdown">
+                                            <ul class="menu__dropdown-list">
+                                                <li class="menu__dropdown-item">
+                                                    <a href="./page-production-doors.html" class="menu__dropdown-link">
+                                                        Противопожарные двери
+                                                    </a>
+                                                </li>
+                                                <li class="menu__dropdown-item">
+                                                    <a href="./page-production-doors.html" class="menu__dropdown-link">
+                                                        Противопожарные окна
+                                                    </a>
+                                                </li>
+                                                <li class="menu__dropdown-item">
+                                                    <a href="./page-production-partitions.html" class="menu__dropdown-link">
+                                                        Противопожарные перегородки
+                                                    </a>
+                                                </li>
+                                                <li class="menu__dropdown-item">
+                                                    <a href="./page-production-alstructures.html" class="menu__dropdown-link">
+                                                        Aлюминиевые контструкции
+                                                    </a>
+                                                </li>
+                                                <li class="menu__dropdown-item">
+                                                    <a href="./page-production-facades.html" class="menu__dropdown-link">
+                                                        Противопожарные фасады
+                                                    </a>
+                                                </li>
+                                                <li class="menu__dropdown-item">
+                                                    <a href="./page-production-glass.html" class="menu__dropdown-link">
+                                                        Противопожарное стекло
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./page-about.html" class="menu__link">О компании</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./page-projects.html" class="menu__link">Наши проекты</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./page-certificates.html" class="menu__link">Лицензии и сертификаты</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./page-reviews.html" class="menu__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./page-faq.html" class="menu__link">FAQ</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="./page-contacts.html" class="menu__link">Контакты</a>
+                                    </li>
+                                </ul>
+                                <button data-target="mobile-menu" class="menu__btn-menu btn-menu js-modal-btn" type="button">
+                                    <i class="btn-menu__bars" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Menu</span>
+                                </button>
+                            </nav>
+                            <form action="#" class="header__search header__cell search">
+                                <button type="button" class="search__button js-search-button">
+                                    <svg class="icon">
+                                        <use xlink:href="./images/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                                <button type="submit" class="search__button search__submit">
+                                    <svg class="icon">
+                                        <use xlink:href="./images/sprite.svg#search"></use>
+                                    </svg>
+                                </button>
+                                <div class="search__input-wrapper">
+                                    <input type="text" class="search__input" placeholder="Ведите запрос" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="main">
+                <section class="section intro">
+                    <div class="intro__background-slider">
+                        <div class="background-slider swiper" id="introSwiperSlider">
+                            <ul class="background-slider__list swiper-wrapper">
+                                <li class="background-slider__slide swiper-slide" data-slider="0">
+                                    <picture>
+                                        <source srcset="./images/intro/back-0.jpg">
+                                        <img src="./images/intro/back-0.jpg" alt="">
+                                    </picture>
+                                </li>
+                                <li class="background-slider__slide swiper-slide" data-slider="1">
+                                    <picture>
+                                        <source srcset="./images/intro/back-1.jpg">
+                                        <img src="./images/intro/back-1.jpg" alt="">
+                                    </picture>
+                                </li>
+                                <li class="background-slider__slide swiper-slide" data-slider="2">
+                                    <picture>
+                                        <source srcset="./images/intro/back-2.jpg">
+                                        <img src="./images/intro/back-2.jpg" alt="">
+                                    </picture>
+                                </li>
+                                <li class="background-slider__slide swiper-slide" data-slider="3">
+                                    <picture>
+                                        <source srcset="./images/intro/back-3.jpg">
+                                        <img src="./images/intro/back-3.jpg" alt="">
+                                    </picture>
+                                </li>
+                                <li class="background-slider__slide swiper-slide" data-slider="4">
+                                    <picture>
+                                        <source srcset="./images/intro/back-4.jpg">
+                                        <img src="./images/intro/back-4.jpg" alt="">
+                                    </picture>
+                                </li>
+                                <li class="background-slider__slide swiper-slide" data-slider="5">
+                                    <picture>
+                                        <source srcset="./images/intro/back-5.jpg">
+                                        <img src="./images/intro/back-5.jpg" alt="">
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="intro__head section__header-padding">
+                        <div class="intro__site-container">
+                            <div class="intro__heading">
+                                <h1 class="intro__title h1-title">
+                                    Надежные огнестойкие конструкции для вашей безопасности
+                                </h1>
+                                <span class="intro__subtitle">
+                                    Совершенно. Безопасно
+                                </span>
+                                <div class="intro__row">
+                                    <a href="#" class="intro__link main-button">
+                                        смотреть всю продукцию
+                                    </a>
+                                    <div class="intro__services">
+                                        <div class="intro__service service">
+                                            <span class="service__marker"></span>
+                                            <div class="service__text h3-title">Проектирование</div>
+                                        </div>
+                                        <div class="intro__service service">
+                                            <span class="service__marker"></span>
+                                            <div class="service__text h3-title">изготовление</div>
+                                        </div>
+                                        <div class="intro__service service">
+                                            <span class="service__marker"></span>
+                                            <div class="service__text h3-title">монтаж</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__navigation">
+                        <div class="intro__site-container">
+                            <div class="intro__thumbs thumbs">
+                                <ul class="thumbs__list">
+                                    <li class="thumbs__item">
+                                        <a href="#" data-num="0" class="thumb">
+                                            <div class="thumb__body">
+                                                <span class="thumb__name h3-title">Противопожарные двери</span>
+                                                <button disabled class="thumb__button main-button">
+                                                    <span class="main-button__icon-text">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                        </svg>
+                                                        смотреть
+                                                    </span>
+                                                </button>
+                                                <div class="thumb__pic">
+                                                    <img src="./images/thumbs/image-1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thumbs__item">
+                                        <a href="#" data-num="1" class="thumb">
+                                            <div class="thumb__body">
+                                                <span class="thumb__name h3-title">Противопожарные окна</span>
+                                                <button disabled class="thumb__button main-button">
+                                                    <span class="main-button__icon-text">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                        </svg>
+                                                        смотреть
+                                                    </span>
+                                                </button>
+                                                <div class="thumb__pic">
+                                                    <img src="./images/thumbs/image-2.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thumbs__item">
+                                        <a href="#" data-num="2" class="thumb">
+                                            <div class="thumb__body">
+                                                <span class="thumb__name h3-title">Противопожарные перегородки</span>
+                                                <button disabled class="thumb__button main-button">
+                                                    <span class="main-button__icon-text">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                        </svg>
+                                                        смотреть
+                                                    </span>
+                                                </button>
+                                                <div class="thumb__pic">
+                                                    <img src="./images/thumbs/image-3.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thumbs__item">
+                                        <a href="#" data-num="3" class="thumb">
+                                            <div class="thumb__body">
+                                                <span class="thumb__name h3-title">
+                                                    Алюминиевые конструкции
+                                                </span>
+                                                <button disabled class="thumb__button main-button">
+                                                    <span class="main-button__icon-text">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                        </svg>
+                                                        смотреть
+                                                    </span>
+                                                </button>
+                                                <div class="thumb__pic">
+                                                    <img src="./images/thumbs/image-4.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thumbs__item">
+                                        <a href="#" data-num="4" class="thumb">
+                                            <div class="thumb__body">
+                                                <span class="thumb__name h3-title">
+                                                    Противопожарные фасады
+                                                </span>
+                                                <button disabled class="thumb__button main-button">
+                                                    <span class="main-button__icon-text">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                        </svg>
+                                                        смотреть
+                                                    </span>
+                                                </button>
+                                                <div class="thumb__pic">
+                                                    <img src="./images/thumbs/image-5.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="thumbs__item">
+                                        <a href="#" data-num="5" class="thumb">
+                                            <div class="thumb__body">
+                                                <span class="thumb__name h3-title">
+                                                    противопожарное стекло
+                                                </span>
+                                                <button disabled class="thumb__button main-button">
+                                                    <span class="main-button__icon-text">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                        </svg>
+                                                        смотреть
+                                                    </span>
+                                                </button>
+                                                <div class="thumb__pic">
+                                                    <img src="./images/thumbs/image-6.png" alt="">
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section constructions">
+                    <div class="constructions__site-container">
+                        <div class="constructions__body">
+                            <div class="section__heading">
+                                <h2 class="section__title h1-title">
+                                    Противопожарные конструкции
+                                </h2>
+                            </div>
+                            <ul class="constructions__list">
+                                <li class="constructions__item">
+                                    <a href="#" class="constructions__link construction">
+                                        <div class="construction__body">
+                                            <div class="construction__billet">
+                                                <div class="construction__picture">
+                                                    <img src="./images/constructions/doors.png" alt="">
+                                                </div>
+                                                <div class="construction__number">
+                                                    <span class="construction__number-value">
+                                                        01
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="construction__name">
+                                                <span class="construction__name-value">
+                                                    Противопожарные двери
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="construction__cover">
+                                            <div class="construction__cover-content">
+                                                <span class="construction__title">
+                                                    степени защиты
+                                                </span>
+                                                <ul class="construction__list">
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-15
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 15 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIWS-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-60
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 60 мин
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="construction__button main-button">
+                                                    смотреть продукцию
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="constructions__item">
+                                    <a href="#" class="constructions__link construction">
+                                        <div class="construction__body">
+                                            <div class="construction__billet">
+                                                <div class="construction__picture">
+                                                    <img src="./images/constructions/windows.png" alt="">
+                                                </div>
+                                                <div class="construction__number">
+                                                    <span class="construction__number-value">
+                                                        02
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="construction__name">
+                                                <span class="construction__name-value">
+                                                    Противопожарные окна
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="construction__cover">
+                                            <div class="construction__cover-content">
+                                                <span class="construction__title">
+                                                    степени защиты
+                                                </span>
+                                                <ul class="construction__list">
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-15
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 15 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIWS-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-60
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 60 мин
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="construction__button main-button">
+                                                    смотреть продукцию
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="constructions__item">
+                                    <a href="#" class="constructions__link construction">
+                                        <div class="construction__body">
+                                            <div class="construction__billet">
+                                                <div class="construction__picture">
+                                                    <img src="./images/constructions/partitions.png" alt="">
+                                                </div>
+                                                <div class="construction__number">
+                                                    <span class="construction__number-value">
+                                                        03
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="construction__name">
+                                                <span class="construction__name-value">
+                                                    Противопожарные перегородки
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="construction__cover">
+                                            <div class="construction__cover-content">
+                                                <span class="construction__title">
+                                                    степени защиты
+                                                </span>
+                                                <ul class="construction__list">
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-15
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 15 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIWS-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-60
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 60 мин
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="construction__button main-button">
+                                                    смотреть продукцию
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="constructions__item">
+                                    <a href="#" class="constructions__link construction">
+                                        <div class="construction__body">
+                                            <div class="construction__billet">
+                                                <div class="construction__picture">
+                                                    <img src="./images/constructions/construct.png" alt="">
+                                                </div>
+                                                <div class="construction__number">
+                                                    <span class="construction__number-value">
+                                                        04
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="construction__name">
+                                                <span class="construction__name-value">
+                                                    Алюминиевые конструкции
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="construction__cover">
+                                            <div class="construction__cover-content">
+                                                <span class="construction__title">
+                                                    степени защиты
+                                                </span>
+                                                <ul class="construction__list">
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-15
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 15 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIWS-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-60
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 60 мин
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="construction__button main-button">
+                                                    смотреть продукцию
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="constructions__item">
+                                    <a href="#" class="constructions__link construction">
+                                        <div class="construction__body">
+                                            <div class="construction__billet">
+                                                <div class="construction__picture">
+                                                    <img src="./images/constructions/fasad.png" alt="">
+                                                </div>
+                                                <div class="construction__number">
+                                                    <span class="construction__number-value">
+                                                        05
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="construction__name">
+                                                <span class="construction__name-value">
+                                                    Противопожарные фасады
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="construction__cover">
+                                            <div class="construction__cover-content">
+                                                <span class="construction__title">
+                                                    степени защиты
+                                                </span>
+                                                <ul class="construction__list">
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-15
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 15 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIWS-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-60
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 60 мин
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="construction__button main-button">
+                                                    смотреть продукцию
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="constructions__item">
+                                    <a href="#" class="constructions__link construction">
+                                        <div class="construction__body">
+                                            <div class="construction__billet">
+                                                <div class="construction__picture">
+                                                    <img src="./images/constructions/glass.png" alt="">
+                                                </div>
+                                                <div class="construction__number">
+                                                    <span class="construction__number-value">
+                                                        06
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="construction__name">
+                                                <span class="construction__name-value">
+                                                    Противопожарное стекло
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="construction__cover">
+                                            <div class="construction__cover-content">
+                                                <span class="construction__title">
+                                                    степени защиты
+                                                </span>
+                                                <ul class="construction__list">
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-15
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 15 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIWS-30
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 30 мин
+                                                        </span>
+                                                    </li>
+                                                    <li class="construction__item">
+                                                        <span class="construction__item-key">
+                                                            Предел огнестойкости EIW-60
+                                                        </span>
+                                                        <span class="construction__item-value">
+                                                            Сопротивление огню 60 мин
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                                <button class="construction__button main-button">
+                                                    смотреть продукцию
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="constructions__link-wrapper">
+                                <a href="#" class="main-button">
+                                    перейти в каталог
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section about">
+                    <div class="about__site-container">
+                        <div class="about__body">
+                            <h2 class="about__title section__title h1-title">
+                                О компании
+                            </h2>
+                            <div class="about__content">
+                                <div class="about__head">
+                                    <div class="about__slider-wrapper">
+                                        <div class="about__slider">
+                                            <div class="slider-about">
+                                                <div class="slider-about__swiper swiper" id="aboutSliderSwiper">
+                                                    <ul class="slider-about__list swiper-wrapper">
+                                                        <li class="slider-about__slide swiper-slide">
+                                                            <picture>
+                                                                <source srcset="./images/about/img-1.jpg">
+                                                                <img src="./images/about/img-1.jpg" alt="">
+                                                            </picture>
+                                                        </li>
+                                                        <li class="slider-about__slide swiper-slide">
+                                                            <picture>
+                                                                <source srcset="./images/about/img-1.jpg">
+                                                                <img src="./images/about/img-1.jpg" alt="">
+                                                            </picture>
+                                                        </li>
+                                                        <li class="slider-about__slide swiper-slide">
+                                                            <picture>
+                                                                <source srcset="./images/about/img-1.jpg">
+                                                                <img src="./images/about/img-1.jpg" alt="">
+                                                            </picture>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="slider-about__button slider-about__button--prev slider-about__swiper-button-prev swiper-button-prev">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="slider-about__button slider-about__button--next slider-about__swiper-button-next swiper-button-next">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="swiper-pagination"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="about__info">
+                                        <div class="about__info-title">
+                                            Наше кредо - профессионализм сотрудников на всех этапах от менеджеров до сборщиков конструкций
+                                        </div>
+                                        <div class="about__info-desc">
+                                            <span class="_bold">
+                                                Уже более 20 лет мы успешно обеспечиваем пожарную безопасность зданий и сооружений на территории Российской Федерации:
+                                            </span><br>
+                                            <span>
+                                                производим и устанавливаем светопрозрачные огнестойкие конструкций, которые предотвращают возгорание строительных
+                                                объектов и не дают распространиться огню при пожаре.
+                                            </span>
+                                        </div>
+                                        <div class="about__info-btns">
+                                            <a href="#" class="secondary-button">
+                                                <span class="secondary-button__text">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                    </svg>
+                                                    узнать больше
+                                                </span>
+                                            </a>
+                                            <a
+                                                href="#"
+                                                data-src="https://www.youtube.com/watch?v=z2X2HaTvkl8"
+                                                data-fancybox-video
+                                                class="video-button js-youtube-fancybox">
+                                                <span class="video-button__icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#btn-video"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="video-button__text">
+                                                    Смотреть видео<br> с производства
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="about__middle">
+                                    <ul class="about__pluses">
+                                        <li class="about__plus plus">
+                                            <div class="plus__body">
+                                                <div class="plus__number construction__number">
+                                                    <span class="construction__number-value">
+                                                        25+
+                                                    </span>
+                                                </div>
+                                                <span class="plus__text">
+                                                    лет<br> на рынке
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="about__plus plus">
+                                            <div class="plus__body">
+                                                <div class="plus__number construction__number">
+                                                    <span class="construction__number-value">
+                                                        60+
+                                                    </span>
+                                                </div>
+                                                <span class="plus__text">
+                                                    сотрудников<br> в штате
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="about__plus plus">
+                                            <div class="plus__body">
+                                                <div class="plus__number construction__number">
+                                                    <span class="construction__number-value">
+                                                        500+
+                                                    </span>
+                                                </div>
+                                                <span class="plus__text">
+                                                    готовых<br> проектов
+                                                </span>
+                                            </div>
+                                        </li>
+                                        <li class="about__plus plus">
+                                            <div class="plus__body">
+                                                <div class="plus__number construction__number">
+                                                    <span class="construction__number-value">
+                                                        2500+
+                                                    </span>
+                                                </div>
+                                                <span class="plus__text">
+                                                    м² производственных<br> площадей
+                                                </span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="about__bottom">
+                                    <ul class="about__advantages">
+                                        <li class="about__advantage advantage">
+                                            <div class="advatage__heading">
+                                                <span class="advatage__heading-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#advatage-1"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="advatage__heading-text">
+                                                    Собственное производство
+                                                </span>
+                                            </div>
+                                            <span class="advatage__desc">
+                                                Свой конструкторский отдел. Проведение мотажных работ. Высокоточное европейское оборудование позволяет ежемесячно
+                                                выпускать 3000 м² конструкций
+                                            </span>
+                                        </li>
+                                        <li class="about__advantage advantage">
+                                            <div class="advatage__heading">
+                                                <span class="advatage__heading-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#advatage-2"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="advatage__heading-text">
+                                                    все степени огнестойкости
+                                                </span>
+                                            </div>
+                                            <span class="advatage__desc">
+                                                Противопожарные конструкции: остекленные и&nbsp;глухие алюминиевые двери и&nbsp;витражи любой требуемой степени
+                                                огнестойкости EIW-15, EIW-30, EIW-45, EIW-60, EIWS-15, EIWS-30, EIWS-60, E30, E60.
+                                            </span>
+                                        </li>
+                                        <li class="about__advantage advantage">
+                                            <div class="advatage__heading">
+                                                <span class="advatage__heading-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#advatage-3"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="advatage__heading-text">
+                                                    подтверждено сертификатами
+                                                </span>
+                                            </div>
+                                            <span class="advatage__desc">
+                                                Все конструкции сертифицированы, качество подтверждено сертификатами соответствия Госстроя РФ.
+                                            </span>
+                                        </li>
+                                        <li class="about__advantage advantage">
+                                            <div class="advatage__heading">
+                                                <span class="advatage__heading-icon">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#advatage-4"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="advatage__heading-text">
+                                                    работы на основании лицензии МЧС РФ
+                                                </span>
+                                            </div>
+                                            <span class="advatage__desc">
+                                                Работы по монтажу конструкций производятся на основании лицензии МЧС РФ, подтверждающей право на проведение этих работ.
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about__reasons reasons">
+                        <div class="reasons__heading">
+                            <div class="reasons__site-container">
+                                <div class="reasons__title">
+                                    семь основных<br> причин выбрать нас
+                                </div>
+                                <div class="reasons__pseudo-list">
+                                    <div class="reasons__pseudo-item"></div>
+                                    <div class="reasons__pseudo-item"></div>
+                                    <div class="reasons__pseudo-item"></div>
+                                    <div class="reasons__pseudo-item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reasons__site-container">
+                            <div class="reasons__list-wrapper">
+                                <ul class="reasons__list">
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    01
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                Специальные условия для постоянных&nbsp;клиентов
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    02
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                Гибкая ценовая политика
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    03
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                Собственная логистика
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    04
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                Быстрые&nbsp;расчеты коммерческих предложений
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="reasons__list">
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    05
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                Строгое&nbsp;соблюдение гарантийных обязательств
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    06
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                Профессиональные консультации менеджеров&nbsp;проекта
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li class="reasons__item">
+                                        <div class="reason">
+                                            <div class="reason__number construction__number">
+                                                <span class="construction__number-value">
+                                                    07
+                                                </span>
+                                            </div>
+                                            <span class="reason__text h3-title">
+                                                выявление&nbsp;ошибок в&nbsp;проектах&nbsp;и&nbsp;рекомендации по&nbsp;их&nbsp;устранению
+                                            </span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="reasons__link-wrapper">
+                                    <a href="#" data-target="callback" class="reasons__link main-button js-modal-btn">
+                                        стать клиентом
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section proposal">
+                    <div class="proposal__site-container">
+                        <div class="proposal__body">
+                            <div class="proposal__left estimate estimate--main">
+                                <div class="estimate__body">
+                                    <div class="estimate__title">
+                                        Уже есть готовая смета от&nbsp;другого поставщика?
+                                    </div>
+                                    <div class="estimate__subtitles">
+                                        <span class="estimate__subtitle estimate__subtitle--thin">
+                                            Отправьте файл вашей сметы нам
+                                        </span>
+                                        <span class="estimate__subtitle">
+                                            Расчитаем дешевле — по ценам производителей
+                                        </span>
+                                    </div>
+                                    <div class="estimate__contacts">
+                                        <span class="estimate__contacts-title">
+                                            Выберите способ отправки:
+                                        </span>
+                                        <div class="estimate__links">
+                                            <a href="#" class="video-button">
+                                                <span class="video-button__icon video-button__icon--big">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#mail"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="video-button__text">
+                                                    По электронной<br> почте
+                                                </span>
+                                            </a>
+                                            <a href="#" class="video-button">
+                                                <span class="video-button__icon video-button__icon--big">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#chat-2"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="video-button__text">
+                                                    Открытая линия<br> Дрейвинг
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="proposal__right">
+                                <div class="proposal__image-screen">
+                                    <picture>
+                                        <source srcset="./images/proposal/mockup.png">
+                                        <img src="./images/proposal/mockup.png" alt="">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section projects">
+                    <div class="projects__site-container">
+                        <div class="section__heading section__heading--center">
+                            <h2 class="section__title">
+                                Наши проекты
+                            </h2>
+                            <h2 class="section__subtitle">
+                                Среди них может оказаться и ваша компания
+                            </h2>
+                        </div>
+                    </div>
+                    <div class="projects__content">
+                        <div class="projects__map" id="projects-yamap">
+                            <div class="balloon">
+                                <div class="balloon__body">
+                                    <div class="balloon__header">
+                                        <span class="balloon__title">
+                                            г. Омск
+                                        </span>
+                                    </div>
+                                    <div class="balloon__content">
+                                        <a href="#" class="balloon__simple-item balloon__simple-item--hide">
+                                            <div class="balloon__simple-top">
+                                                <div class="balloon__simple-image-wrapper">
+                                                    <div class="balloon__simple-image">
+                                                        <img src="./images/foto.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="balloon__simple-info">
+                                                    <span class="balloon__simple-date">
+                                                        28.06.2022
+                                                    </span>
+                                                    <span class="balloon__simple-name">
+                                                        Торговый центр «Омский»
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="balloon__simple-text">
+                                                <p>
+                                                    Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                    содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                    продемонстрировать типографику в деле ...
+                                                </p>
+                                            </div>
+                                            <div class="balloon__simple-cover">
+                                                <span class="balloon__simple-icon-text">
+                                                    <svg class="icon">
+                                                        <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                    </svg>
+                                                    смотреть проект
+                                                </span>
+                                            </div>
+                                        </a>
+                                        <div class="balloon__list-wrapper">
+                                            <ul class="balloon__list">
+                                                <li class="balloon__item">
+                                                    <a href="#" class="balloon__simple-item">
+                                                        <div class="balloon__simple-top">
+                                                            <div class="balloon__simple-image-wrapper">
+                                                                <div class="balloon__simple-image">
+                                                                    <img src="./images/foto.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="balloon__simple-info">
+                                                                <span class="balloon__simple-date">
+                                                                    28.06.2022
+                                                                </span>
+                                                                <span class="balloon__simple-name">
+                                                                    Торговый центр «Омский»
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="balloon__simple-text">
+                                                            <p>
+                                                                Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                                содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                                продемонстрировать типографику в деле ...
+                                                            </p>
+                                                        </div>
+                                                        <div class="balloon__simple-cover">
+                                                            <span class="balloon__simple-icon-text">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                                смотреть проект
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="balloon__item">
+                                                    <a href="#" class="balloon__simple-item">
+                                                        <div class="balloon__simple-top">
+                                                            <div class="balloon__simple-image-wrapper">
+                                                                <div class="balloon__simple-image">
+                                                                    <img src="./images/foto.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="balloon__simple-info">
+                                                                <span class="balloon__simple-date">
+                                                                    28.06.2022
+                                                                </span>
+                                                                <span class="balloon__simple-name">
+                                                                    Торговый центр «Омский»
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="balloon__simple-text">
+                                                            <p>
+                                                                Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                                содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                                продемонстрировать типографику в деле ...
+                                                            </p>
+                                                        </div>
+                                                        <div class="balloon__simple-cover">
+                                                            <span class="balloon__simple-icon-text">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                                смотреть проект
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class="balloon__item">
+                                                    <a href="#" class="balloon__simple-item">
+                                                        <div class="balloon__simple-top">
+                                                            <div class="balloon__simple-image-wrapper">
+                                                                <div class="balloon__simple-image">
+                                                                    <img src="./images/foto.png" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="balloon__simple-info">
+                                                                <span class="balloon__simple-date">
+                                                                    28.06.2022
+                                                                </span>
+                                                                <span class="balloon__simple-name">
+                                                                    Торговый центр «Омский»
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="balloon__simple-text">
+                                                            <p>
+                                                                Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                                содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                                продемонстрировать типографику в деле ...
+                                                            </p>
+                                                        </div>
+                                                        <div class="balloon__simple-cover">
+                                                            <span class="balloon__simple-icon-text">
+                                                                <svg class="icon">
+                                                                    <use xlink:href="./images/sprite.svg#arrow"></use>
+                                                                </svg>
+                                                                смотреть проект
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="balloon__list-link main-button">
+                                                смотреть все проекты в казани
+                                            </a>
+                                        </div>
+                                        <a href="#" class="balloon__desc-link main-button">
+                                            смотреть проект
+                                        </a>
+                                    </div>
+                                    <button class="modal__close-button balloon__close-button">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#close-m"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="projects__button-wrapper">
+                            <div class="projects__site-container">
+                                <a href="#" class="main-button main-button--white">
+                                    смотреть все проекты
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="white-wrapper">
+                    <section class="section partners">
+                        <div class="partners__site-container">
+                            <div class="partners__heading section__heading section__heading--center">
+                                <h2 class="section__title">
+                                    нам доверяют
+                                </h2>
+                                <h2 class="section__subtitle">
+                                    Мы гордимся нашими партнерами
+                                </h2>
+                            </div>
+                            <div id="partners-slider" class="partners__body partners__body--slider">
+                                <div class="partners__slider">
+                                    <div class="partners__swiper partners-swiper swiper">
+                                        <ul class="partners__swiper-wrapper swiper-wrapper">
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-1.png">
+                                                        <img src="./images/partners/img-1.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-2.png">
+                                                        <img src="./images/partners/img-2.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-3.png">
+                                                        <img src="./images/partners/img-3.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-4.png">
+                                                        <img src="./images/partners/img-4.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-6.png">
+                                                        <img src="./images/partners/img-6.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-7.png">
+                                                        <img src="./images/partners/img-7.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <div class="partners__item partner">
+                                                    <picture>
+                                                        <source srcset="./images/partners/img-8.png">
+                                                        <img src="./images/partners/img-8.png" alt="">
+                                                    </picture>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-about__button slider-about__button--prev partners__swiper-button partners__swiper-button--prev
+                                            swiper-button-prev">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slider-about__button slider-about__button--next partners__swiper-button partners__swiper-button--next
+                                            swiper-button-next">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="partners__swiper-pagination swiper-pagination"></div>
+                                </div>
+                                <div class="partners__link-wrapper">
+                                    <button data-role="partners-list" class="main-button main-button--border js-partners__link">
+                                        просмотреть все
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="partners-list" class="partners__body partners__body--list">
+                                <ul class="partners__list">
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-1.png">
+                                                <img src="./images/partners/img-1.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-2.png">
+                                                <img src="./images/partners/img-2.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-3.png">
+                                                <img src="./images/partners/img-3.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-4.png">
+                                                <img src="./images/partners/img-4.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-5.png">
+                                                <img src="./images/partners/img-5.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-6.png">
+                                                <img src="./images/partners/img-6.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-7.png">
+                                                <img src="./images/partners/img-7.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-8.png">
+                                                <img src="./images/partners/img-8.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-9.png">
+                                                <img src="./images/partners/img-9.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-10.png">
+                                                <img src="./images/partners/img-10.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-11.png">
+                                                <img src="./images/partners/img-11.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-12.png">
+                                                <img src="./images/partners/img-12.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-13.png">
+                                                <img src="./images/partners/img-13.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-14.png">
+                                                <img src="./images/partners/img-14.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-15.png">
+                                                <img src="./images/partners/img-15.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-16.png">
+                                                <img src="./images/partners/img-16.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-17.png">
+                                                <img src="./images/partners/img-17.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-18.png">
+                                                <img src="./images/partners/img-18.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-19.png">
+                                                <img src="./images/partners/img-19.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                    <li class="partners__item">
+                                        <div class="partner">
+                                            <picture>
+                                                <source srcset="./images/partners/img-20.png">
+                                                <img src="./images/partners/img-20.png" alt="">
+                                            </picture>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="partners__link-wrapper">
+                                    <button data-role="partners-slider" class="main-button main-button--border js-partners__link">
+                                        СВЕРНУТЬ
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section licenses partners">
+                        <div class="partners__site-container">
+                            <div class="partners__heading section__heading section__heading--center">
+                                <h2 class="section__title">
+                                    Наши лицензии и сертификаты
+                                </h2>
+                            </div>
+                            <div class="partners__body">
+                                <div class="licenses__slider partners__slider">
+                                    <div class="partners__swiper licenses-swiper swiper">
+                                        <ul class="licenses__swiper-wrapper swiper-wrapper">
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="partners__swiper-slide swiper-slide">
+                                                <a href="#" data-src="./images/licenses/img-1.jpg" data-fancybox class="partners__item licenses-item">
+                                                    <picture>
+                                                        <source srcset="./images/licenses/img-1.jpg">
+                                                        <img src="./images/licenses/img-1.jpg" alt="">
+                                                    </picture>
+                                                    <span class="licenses-item__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#zoom"></use>
+                                                        </svg>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-about__button slider-about__button--prev partners__swiper-button licenses__swiper-button--prev
+                                            swiper-button-prev">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slider-about__button slider-about__button--next partners__swiper-button licenses__swiper-button--next
+                                            swiper-button-next">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="licenses__swiper-pagination swiper-pagination"></div>
+                                </div>
+                                <div class="partners__link-wrapper">
+                                    <a href="#" class="main-button main-button--border">
+                                        смотреть все
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <form class="section feedback" action="#">
+                    <div class="feedback__site-container">
+                        <div class="feedback__body">
+                            <div class="feedback__heading section__heading section__heading--center">
+                                <h2 class="section__title">
+                                    Бесплатно проконсультируем и подберем оптимальное решение
+                                </h2>
+                                <h2 class="section__subtitle">
+                                    Наш специалист свяжется с Вами в течение 5 минут. Мы оперативно отвечаем на любые вопросы на всех этапах сотрудничества!
+                                </h2>
+                            </div>
+                            <div class="feedback__inputs">
+                                <div class="feedback__rows-wrapper">
+                                    <div class="callback-form__row feedback__row">
+                                        <div class="callback-form__input-wrapper input-block">
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                class="input-block__input input-block__input--light"
+                                                placeholder="Ваше имя"
+                                                data-required="Введите имя">
+                                        </div>
+                                    </div>
+                                    <div class="callback-form__row feedback__row">
+                                        <div class="callback-form__input-wrapper input-block">
+                                            <input
+                                                type="text"
+                                                name="phone"
+                                                class="input-block__input input-block__input--light"
+                                                placeholder="Номер телефона"
+                                                data-required="Введите номер телефона">
+                                        </div>
+                                    </div>
+                                    <div class="callback-form__row feedback__row">
+                                        <button type="button" class="callback-form__submit main-button main-button--feedback js-btn-submit">
+                                            Получить консультацию
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="feedback__agrement callback-form__agreement">
+                                    <span>
+                                        Нажимая на кнопку «Отправить», вы даёте своё согласие
+                                        на
+                                    </span>
+                                    <a href="#">
+                                        обработку персональных данных
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="grey-wrapper">
+                    <section class="reviews">
+                        <div class="reviews__site-container">
+                            <div class="reviews__heading partners__heading section__heading section__heading--center">
+                                <h2 class="section__title">
+                                    отзывы наших клиентов
+                                </h2>
+                                <h2 class="section__subtitle">
+                                    Результаты и уровень нашей работы подтверждают довольные клиенты
+                                </h2>
+                            </div>
+                            <div class="partners__body">
+                                <div class="partners__slider">
+                                    <div class="reviews__swiper partners__swiper reviews-swiper swiper">
+                                        <ul class="partners__swiper-wrapper swiper-wrapper">
+                                            <li class="reviews__swiper-slide swiper-slide">
+                                                <a href="#" class="review review--text-overflowed " target="_blanc">
+                                                    <div class="review__head">
+                                                        <span class="review__date">
+                                                            01.02.2022
+                                                        </span>
+                                                        <span class="review__object">
+                                                            Поволжская государственная академия физической культуры, спорта и туризма
+                                                        </span>
+                                                    </div>
+                                                    <div class="review__text">
+                                                        <span>
+                                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                            продемонстрировать типографику в деле типографику в деле
+                                                        </span>
+                                                        <i>
+                                                            Бурганов Рафис Тимерханович (ректор)
+                                                        </i>
+                                                    </div>
+                                                    <div class="review__pseudo-button secondary-button">
+                                                        <span class="secondary-button__text">
+                                                            <svg class="icon">
+                                                                <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                            </svg>
+                                                            читать весь отзыв
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="reviews__swiper-slide swiper-slide">
+                                                <a href="#" class="review" target="_blanc">
+                                                    <div class="review__head">
+                                                        <span class="review__date">
+                                                            01.02.2022
+                                                        </span>
+                                                        <span class="review__object">
+                                                            Поволжская государственная академия физической культуры, спорта и туризма
+                                                        </span>
+                                                    </div>
+                                                    <div class="review__text">
+                                                        <span>
+                                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                            содержимым. Это тестовый контент, который.
+                                                        </span>
+                                                        <i>
+                                                            Бурганов Рафис Тимерханович (ректор)
+                                                        </i>
+                                                    </div>
+                                                    <div class="review__pseudo-button secondary-button">
+                                                        <span class="secondary-button__text">
+                                                            <svg class="icon">
+                                                                <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                            </svg>
+                                                            читать весь отзыв
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="reviews__swiper-slide swiper-slide">
+                                                <a href="#" class="review review--text-overflowed" target="_blanc">
+                                                    <div class="review__head">
+                                                        <span class="review__date">
+                                                            01.02.2022
+                                                        </span>
+                                                        <span class="review__object">
+                                                            Поволжская государственная академия физической культуры, спорта и туризма
+                                                        </span>
+                                                    </div>
+                                                    <div class="review__text">
+                                                        <span>
+                                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                            продемонстрировать типографику в деле типографику в деле
+                                                        </span>
+                                                        <i>
+                                                            Бурганов Рафис Тимерханович (ректор)
+                                                        </i>
+                                                    </div>
+                                                    <div class="review__pseudo-button secondary-button">
+                                                        <span class="secondary-button__text">
+                                                            <svg class="icon">
+                                                                <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                            </svg>
+                                                            читать весь отзыв
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="reviews__swiper-slide swiper-slide">
+                                                <a href="#" class="review review--text-overflowed" target="_blanc">
+                                                    <div class="review__head">
+                                                        <span class="review__date">
+                                                            01.02.2022
+                                                        </span>
+                                                        <span class="review__object">
+                                                            Поволжская государственная академия физической культуры, спорта и туризма
+                                                        </span>
+                                                    </div>
+                                                    <div class="review__text">
+                                                        <span>
+                                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                                            продемонстрировать типографику в деле типографику в деле должен нести никакого смысла, лишь показать наличие самого
+                                                            текста или продемонстрировать типографику в деле типографику в деле
+                                                        </span>
+                                                        <i>
+                                                            Бурганов Рафис Тимерханович (ректор)
+                                                        </i>
+                                                    </div>
+                                                    <div class="review__pseudo-button secondary-button">
+                                                        <span class="secondary-button__text">
+                                                            <svg class="icon">
+                                                                <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                            </svg>
+                                                            читать весь отзыв
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="slider-about__button slider-about__button--prev partners__swiper-button reviews__swiper-button--prev
+                                            swiper-button-prev">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="slider-about__button slider-about__button--next partners__swiper-button reviews__swiper-button--next
+                                            swiper-button-next">
+                                        <svg class="icon">
+                                            <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="reviews__swiper-pagination swiper-pagination"></div>
+                                </div>
+                                <div class="partners__link-wrapper">
+                                    <a href="#" class="main-button main-button--border">
+                                        Читать все
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section faq">
+                        <div class="faq__site-container">
+                            <div class="faq__heading section__heading section__heading--center">
+                                <h2 class="section__title">
+                                    <span class="_accent-color">
+                                        FAQ.
+                                    </span>
+                                    часто задаваемые вопросы
+                                </h2>
+                                <h2 class="section__subtitle">
+                                    В этом разделе мы подобрали для вас ответы на самые распространенные вопросы
+                                </h2>
+                            </div>
+                            <ul class="faq__list">
+                                <li class="faq__item">
+                                    <button class="faq__button">
+                                        <span class="faq__question">
+                                            как проверить правильность подбора огнестойкости?
+                                        </span>
+                                        <span class="faq__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="./images/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="faq__answer">
+                                        <span class="faq__text">
+                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                            продемонстрировать типографику в деле...
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="faq__item">
+                                    <button class="faq__button">
+                                        <span class="faq__question">
+                                            как сделать выбор профильной системы?
+                                        </span>
+                                        <span class="faq__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="./images/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="faq__answer">
+                                        <span class="faq__text">
+                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                            продемонстрировать типографику в деле...
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="faq__item">
+                                    <button class="faq__button">
+                                        <span class="faq__question">
+                                            Можно ли получить рекомендации по правильной сборке конструкций и узлам крепления при монтаже?
+                                        </span>
+                                        <span class="faq__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="./images/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="faq__answer">
+                                        <span class="faq__text">
+                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                            продемонстрировать типографику в деле...
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="faq__item">
+                                    <button class="faq__button">
+                                        <span class="faq__question">
+                                            чем отличается гост от сп?
+                                        </span>
+                                        <span class="faq__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="./images/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="faq__answer">
+                                        <span class="faq__text">
+                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                            продемонстрировать типографику в деле...
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="faq__item">
+                                    <button class="faq__button">
+                                        <span class="faq__question">
+                                            как стать партнером СПК Дрейвинг?
+                                        </span>
+                                        <span class="faq__icon">
+                                            <svg class="icon">
+                                                <use xlink:href="./images/sprite.svg#plus"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div class="faq__answer">
+                                        <span class="faq__text">
+                                            Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро заполнить макеты или прототипы
+                                            содержимым. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или
+                                            продемонстрировать типографику в деле...
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="partners__link-wrapper">
+                                <a href="#" class="main-button">
+                                    Узнать больше
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section info">
+                        <div class="info__site-container">
+                            <div class="faq__heading section__heading section__heading--center">
+                                <h2 class="section__title">
+                                    вам будет полезно
+                                </h2>
+                            </div>
+                            <div class="info__body">
+                                <div class="info__image">
+                                    <picture>
+                                        <source srcset="./images/info/img.jpg">
+                                        <img src="./images/info/img.jpg" alt="">
+                                    </picture>
+                                </div>
+                                <div class="info__desc">
+                                    <span class="info__title">
+                                        СП 4.13130.2013 Системы противопожарной защиты.
+                                    </span>
+                                    <span class="info__text">
+                                        Настоящий свод правил устанавливает требования пожарной безопасности к объемно-планировочным и конструктивным решениям,
+                                        обеспечивающим ограничение распространения пожара при проектировании, строительстве и эксплуатации зданий и сооружений.
+                                    </span>
+                                    <div class="info__links">
+                                        <button data-target="spec" class="link js-modal-btn">
+                                            <span class="link__icon">
+                                                <svg class="icon">
+                                                    <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="link__text">
+                                                смотреть кратко
+                                            </span>
+                                        </button>
+                                        <a href="#" class="link" download>
+                                            <span class="link__icon">
+                                                <svg class="icon">
+                                                    <use xlink:href="./images/sprite.svg#btn-arrow"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="link__text">
+                                                скачать pdf файл
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section class="section callback">
+                    <div class="callback__site-container">
+                        <div class="callback__body">
+                            <div class="callback__image-wrapper">
+                                <div class="callback__image">
+                                    <img src="./images/callback/door.png" alt="">
+                                </div>
+                            </div>
+                            <div class="callback__form-wrapper">
+                                <div class="modal__heading">
+                                    <span class="modal__title">
+                                        Остались вопросы?
+                                    </span>
+                                    <span class="modal__subtitle">
+                                        Свяжитесь с нами, мы ответим на все!
+                                    </span>
+                                </div>
+                                <div class="modal__content">
+                                    <form action="#" class="callback-form">
+                                        <div class="callback-form__row">
+                                            <div class="callback-form__half">
+                                                <div class="callback-form__input-wrapper input-block">
+                                                    <input type="text" name="name" class="input-block__input" placeholder="Ваше имя" data-required="Введите имя">
+                                                </div>
+                                            </div>
+                                            <div class="callback-form__half">
+                                                <div class="callback-form__input-wrapper input-block">
+                                                    <input type="text" name="mail" class="input-block__input" placeholder="ваша эл. почта" data-required="Введите почту">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="callback-form__row">
+                                            <div class="callback-form__input-wrapper input-block">
+                                                <textarea
+                                                    type="text"
+                                                    name="comment"
+                                                    class="input-block__input input-block__textarea"
+                                                    placeholder="напишите вопрос"
+                                                    data-required="напишите вопрос"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="callback-form__row">
+                                            <button type="button" class="callback-form__submit main-button js-btn-submit">
+                                                Отправить
+                                            </button>
+                                        </div>
+                                        <div class="callback-form__row">
+                                            <div class="callback-form__agreement">
+                                                <span>
+                                                    Нажимая на кнопку «Отправить», вы даёте своё согласие
+                                                                                                        на
+                                                </span>
+                                                <a href="#">
+                                                    обработку персональных данных
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__over">
+                    <div class="footer__site-container">
+                        <div class="footer__heading footer__row">
+                            <a href="/" class="footer__logo logo logo--bigger">
+                                <svg class="icon">
+                                    <use xlink:href="./images/sprite.svg#logo-w"></use>
+                                </svg>
+                            </a>
+                            <div class="footer__top-text second-type-text">
+                                <p>
+                                    Проектирование, изготовление и монтаж противопожарных алюминиевых светопрозрачных конструкций для строительных
+                                    объектов
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer__menu footer__row">
+                            <nav class="menu menu--footer">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Противопожарные конструкции</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">О компании</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Наши проекты</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Лицензии и сертификаты</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Отзывы</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">FAQ</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="#" class="menu__link">Контакты</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__row footer__row--stretch">
+                            <div class="footer__cell">
+                                <div class="footer__contacts contacts">
+                                    <h3 class="contacts__title h3-title">свяжитесь с нами:</h3>
+                                    <div class="contacts__col">
+                                        <ul class="contacts__list">
+                                            <li class="contacts__item">
+                                                <h4 class="contacts__subtitle h4-title">
+                                                    единый номер
+                                                </h4>
+                                                <a href="tel:88005553268" class="contacts__link icon-link icon-link--bold">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#phone"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        8 800 555 32 68
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="contacts__item">
+                                                <h4 class="contacts__subtitle h4-title">
+                                                    Отдел продаж
+                                                </h4>
+                                                <a href="tel:88432781097" class="contacts__link icon-link">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#phone"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        +7 (843) 278-10-97
+                                                    </span>
+                                                </a>
+                                                <a href="tel:+78432781446" class="contacts__link icon-link">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#phone"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        +7 (843) 278-14-46
+                                                    </span>
+                                                </a>
+                                                <a href="tel:+79178500055" class="contacts__link icon-link">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#tablet"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        +7 (917) 850-00-55
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="contacts__item">
+                                                <h4 class="contacts__subtitle h4-title">
+                                                    Приёмная
+                                                </h4>
+                                                <a href="tel:+78432781078" class="contacts__link icon-link">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#phone"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        +7 (843) 278-10-78
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="contacts__list">
+                                            <li class="contacts__item">
+                                                <h4 class="contacts__subtitle h4-title">
+                                                    адрес
+                                                </h4>
+                                                <a href="tel:88005553268" class="contacts__link icon-link icon-link--long-text">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#locmarker"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        <span>
+                                                            420107, РТ, г. Казань,
+                                                        </span>
+                                                        <span>
+                                                            ул. Салимжанова, д. 23
+                                                        </span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="contacts__item">
+                                                <h4 class="contacts__subtitle h4-title">
+                                                    Электронная почта
+                                                </h4>
+                                                <a href="mailto:drawing.567@reteller.ru" class="contacts__link icon-link icon-link--mail">
+                                                    <span class="icon-link__icon">
+                                                        <svg class="icon">
+                                                            <use xlink:href="./images/sprite.svg#evenlop"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="icon-link__text">
+                                                        drawing.567@reteller.ru
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="contacts__item">
+                                                <button class="footer-button" type="button">
+                                                    Заказать звонок
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer__cell">
+                                <div class="footer__catalogs catalogs">
+                                    <h3 class="catalogs__title contacts__title h3-title">наша продукция:</h3>
+                                    <ul class="catalogs__list">
+                                        <li class="catalogs__item">
+                                            <a href="#" class="catalogs__link">
+                                                Противопожарные двери
+                                            </a>
+                                        </li>
+                                        <li class="catalogs__item">
+                                            <a href="#" class="catalogs__link">
+                                                Противопожарные окна
+                                            </a>
+                                        </li>
+                                        <li class="catalogs__item">
+                                            <a href="#" class="catalogs__link">
+                                                Противопожарные перегородки
+                                            </a>
+                                        </li>
+                                        <li class="catalogs__item">
+                                            <a href="#" class="catalogs__link">
+                                                Алюминиевые конструкции
+                                            </a>
+                                        </li>
+                                        <li class="catalogs__item">
+                                            <a href="#" class="catalogs__link">
+                                                Противопожарные фасады
+                                            </a>
+                                        </li>
+                                        <li class="catalogs__item">
+                                            <a href="#" class="catalogs__link">
+                                                Противопожарное стекло
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="catalogs__button footer-button">
+                                        Смотреть каталог
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__basement">
+                    <div class="footer__site-container">
+                        <div class="footer__basement-row">
+                            <a href="#" class="footer__policy footer__copyright">
+                                Политика конфиденциальности
+                            </a>
+                            <a href="#" class="footer__developer developer">
+                                <span class="developer__text footer__copyright">
+                                    Разработано в
+                                </span>
+                                <span class="developer__logo">
+                                    <svg class="icon">
+                                        <use xlink:href="./images/sprite.svg#accent-logo"></use>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a class="footer__copyright ">
+                                <span>
+                                    Копирайт © 2022 группа компаний «Дрейвинг»
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div data-modal="callback" class="modal modal--callback">
+            <div class="modal__container">
+                <div class="modal__body">
+                    <div class="modal__heading">
+                        <span class="modal__title">
+                            заказать звонок
+                        </span>
+                        <span class="modal__subtitle">
+                            Наш специалист свяжется с Вами<br> в течение 5 минут.
+                        </span>
+                    </div>
+                    <div class="modal__content">
+                        <form action="#" class="callback-form">
+                            <div class="callback-form__row">
+                                <div class="callback-form__input-wrapper input-block">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        class="input-block__input input-block__input--light"
+                                        placeholder="Ваше имя"
+                                        data-required="Введите имя">
+                                </div>
+                            </div>
+                            <div class="callback-form__row">
+                                <div class="callback-form__input-wrapper input-block">
+                                    <input
+                                        type="text"
+                                        name="phone"
+                                        class="input-block__input input-block__input--light"
+                                        placeholder="Номер телефона"
+                                        data-required="Введите номер телефона">
+                                </div>
+                            </div>
+                            <div class="callback-form__row">
+                                <button type="button" class="callback-form__submit main-button js-btn-submit">
+                                    Отправить
+                                </button>
+                            </div>
+                            <div class="callback-form__row">
+                                <div class="callback-form__agreement">
+                                    <span>
+                                        Нажимая на кнопку «Отправить»,<br> вы даёте своё согласие на
+                                    </span>
+                                    <a href="#">
+                                        обработку персональных данных
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="modal__close-button">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close-m"></use>
+                        </svg>
+                    </button>
+                    <button data-target="popup-callback" class="modal__popup-button visually-hidden js-modal-btn">
+                        открыть попап
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-modal="question" class="modal modal--question">
+            <div class="modal__container">
+                <div class="modal__body">
+                    <div class="modal__heading">
+                        <span class="modal__title">
+                            Задать вопрос
+                        </span>
+                        <span class="modal__subtitle">
+                            Заполните форму, мы ответим Вам по электронной почте.
+                        </span>
+                    </div>
+                    <div class="modal__content">
+                        <form action="#" class="callback-form">
+                            <div class="callback-form__row">
+                                <div class="callback-form__half">
+                                    <div class="callback-form__input-wrapper input-block">
+                                        <input type="text" name="name" class="input-block__input" placeholder="Ваше имя" data-required="Введите имя">
+                                    </div>
+                                </div>
+                                <div class="callback-form__half">
+                                    <div class="callback-form__input-wrapper input-block">
+                                        <input type="text" name="mail" class="input-block__input" placeholder="ваша эл. почта" data-required="Введите почту">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="callback-form__row">
+                                <div class="callback-form__input-wrapper input-block">
+                                    <textarea
+                                        type="text"
+                                        name="comment"
+                                        class="input-block__input input-block__textarea"
+                                        placeholder="напишите вопрос"
+                                        data-required="напишите вопрос"></textarea>
+                                </div>
+                            </div>
+                            <div class="callback-form__row">
+                                <button type="button" class="callback-form__submit main-button js-btn-submit">
+                                    Отправить
+                                </button>
+                            </div>
+                            <div class="callback-form__row">
+                                <div class="callback-form__agreement">
+                                    <span>
+                                        Нажимая на кнопку «Отправить», вы даёте своё согласие
+                                        на
+                                    </span>
+                                    <a href="#">
+                                        обработку персональных данных
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="modal__close-button">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close-m"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-modal="spec" class="modal modal--spec">
+            <div class="modal__container">
+                <div class="modal__body">
+                    <div class="modal__heading">
+                        <span class="modal__title">
+                            СП 4.13130.2013
+                        </span>
+                        <span class="modal__subtitle">
+                            Краткая информация
+                        </span>
+                    </div>
+                    <div class="modal__content">
+                        <div class="modal__spec-text">
+                            <p>
+                                При пользовании настоящим сводом правил целесообразно проверить действие ссылочных стандартов, сводов правил и
+                                классификаторов в информационной системе общего пользования - на официальном сайте национального органа Российской
+                                Федерации по стандартизации в сети Интернет или по ежегодно издаваемому информационному указателю "Национальные
+                                стандарты", который опубликован по состоянию на 1 января текущего года, и по соответствующим ежемесячно издаваемым
+                                информационным указателям, опубликованным в текущем году. Если ссылочный документ заменен (изменен), то при пользовании
+                                настоящим стандартом следует руководствоваться замененным (измененным) документом. Если ссылочный документ отменен без
+                                замены, то положение, в котором дана ссылка на него, применяется в части, не затрагивающей эту ссылку.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="modal__close-button">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close-m"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-modal="popup-callback" class="modal modal--popup">
+            <div class="modal__container">
+                <div class="modal__body">
+                    <div class="modal__heading">
+                        <span class="modal__title">
+                            Спасибо<br> за обращение!
+                        </span>
+                        <span class="modal__subtitle">
+                            Наш специалист свяжется с Вами<br> в течение 5 минут.
+                        </span>
+                    </div>
+                    <div class="modal__content"></div>
+                    <button class="modal__close-button">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close-m"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-modal="popup-question" class="modal modal--popup">
+            <div class="modal__container">
+                <div class="modal__body">
+                    <div class="modal__heading">
+                        <span class="modal__title">
+                            Спасибо<br> за ваш вопрос!
+                        </span>
+                        <span class="modal__subtitle">
+                            Мы ответим Вам<br> по электронной почте.
+                        </span>
+                    </div>
+                    <div class="modal__content"></div>
+                    <button class="modal__close-button">
+                        <svg class="icon">
+                            <use xlink:href="./images/sprite.svg#close-m"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div data-modal="mobile-menu" class="modal modal--mobile-menu">
+            <div class="modal__container">
+                <div class="modal__body">
+                    <div class="modal__heading">
+                        <span class="modal__title">
+                            меню
+                        </span>
+                    </div>
+                    <div class="menu menu--modal">
+                        <ul class="menu__list">
+                            <li class="menu__item menu__item--dropdown">
+                                <a href="#" class="menu__link">Противопожарные конструкции</a>
+                                <div class="menu__dropdown">
+                                    <ul class="menu__dropdown-list">
+                                        <li class="menu__dropdown-item">
+                                            <a href="#" class="menu__dropdown-link">
+                                                Противопожарные двери
+                                            </a>
+                                        </li>
+                                        <li class="menu__dropdown-item">
+                                            <a href="#" class="menu__dropdown-link">
+                                                Противопожарные окна
+                                            </a>
+                                        </li>
+                                        <li class="menu__dropdown-item">
+                                            <a href="#" class="menu__dropdown-link">
+                                                Противопожарные перегородки
+                                            </a>
+                                        </li>
+                                        <li class="menu__dropdown-item">
+                                            <a href="#" class="menu__dropdown-link">
+                                                Aлюминиевые контструкции
+                                            </a>
+                                        </li>
+                                        <li class="menu__dropdown-item">
+                                            <a href="#" class="menu__dropdown-link">
+                                                Противопожарные фасады
+                                            </a>
+                                        </li>
+                                        <li class="menu__dropdown-item">
+                                            <a href="#" class="menu__dropdown-link">
+                                                Противопожарное стекло
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">О компании</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Наши проекты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Лицензии и сертификаты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отзывы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">FAQ</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+.contacts-page {}
+
+.contacts-page__body {
+    position: relative;
+    z-index: 20;
+
+    display: flex;
+    align-items: stretch;
+
+    margin-bottom: -10rem;
+
+    background-color: var(--c-white);
+    border: 1px solid var(--c-border);
+    filter: drop-shadow(0px 80px 100px rgba(23, 22, 21, 0.19));
+}
+
+.contacts-page__col {
+    flex: 1 1 auto;
+    min-width: 35.5rem;
+
+    border-style: solid;
+    border-color: var(--c-border);
+    border-width: 0 1px 0 0;
+}
+
+.contacts-page__col:last-child {
+    border-width: 0;
+}
+
+
+[class*="ymaps-2"][class*="-ground-pane"] {
+    -webkit-filter: brightness(0.7);
+    filter: brightness(0.7);
+}
+
+@media (max-width : 1200px) {
+    .contacts-page__body {
+        flex-direction: column;
+
+        margin-bottom: 2rem;
+
+        filter: unset;
+    }
+}

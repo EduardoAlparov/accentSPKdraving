@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>FAQ</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="./styles.css">
+
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+	/>
+
+	<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+	/>
+
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=d02525f1-2a0d-4700-a5e1-e4487f06702c&?apikey=d02525f1-2a0d-4700-a5e1-e4487f06702c&load=package.full&lang=ru-RU" type="text/javascript" defer></script>
+
+	<script src="js/common.js" defer></script>
+
+</head>
+
+<body class="preload secondary-page">
+
+	<div class="wrapper">
+
+    	<header class="header">
+			<div class="header__site-container">
+				<div class="header__row header__over">
+
+					<div class="header__logo header__cell">
+						<a href="/" class="logo">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#logo"></use>
+							</svg>
+						</a>
+					</div>
+
+					<div class="header__cell header__informations">
+						<button type="button" disabled class="contact-button">
+								<span class="contact-button__icon">
+									<svg class="icon icon-clock">
+										<use xlink:href="./images/sprite.svg#clock"></use>
+									</svg>
+								</span>
+
+								<span class="contact-button__text">
+									<span>
+										Пн-Пт: 09:00-18:00
+									</span>
+									<span>
+										Сб-Вс: выходной
+									</span>
+								</span>
+						</button>
+
+						<button type="button" disabled class="contact-button">
+							<span class="contact-button__icon">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#locmarker"></use>
+								</svg>
+							</span>
+
+							<span class="contact-button__text">
+								<span>
+									РТ, г. Казань,
+								</span>
+								<span>
+									ул. Салимжанова, д. 23
+								</span>
+							</span>
+						</button>
+					</div>
+
+					<a href="#" class="header__cell header__link contact-button">
+						<span class="contact-button__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#evenlop"></use>
+							</svg>
+						</span>
+					</a>
+
+					<a href="#" class="header__cell header__link contact-button">
+						<span class="contact-button__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#chat"></use>
+							</svg>
+						</span>
+					</a>
+
+					<button data-target="callback" class="header__cell contact-button header__button js-modal-btn" type="button" >
+						<span class="contact-button__icon">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#phone"></use>
+							</svg>
+						</span>
+
+						<span class="contact-button__text">
+							<span>
+								8 (800) 555-32-68
+							</span>
+							<span>
+								Заказать звонок
+							</span>
+						</span>
+					</button>
+
+				</div>
+
+				<div class="header__row header__under">
+					<div class="header__search-wrapper header__cell">
+						<nav class="header__menu header__cell menu">
+							<ul class="menu__list">
+								<li class="menu__item menu__item--dropdown">
+									<a href="#" class="menu__link">Противопожарные конструкции</a>
+									<div class="menu__dropdown">
+										<ul class="menu__dropdown-list">
+											<li class="menu__dropdown-item">
+												<a href="#" class="menu__dropdown-link">
+													Противопожарные двери
+												</a>
+											</li>
+											<li class="menu__dropdown-item">
+												<a href="#" class="menu__dropdown-link">
+													Противопожарные окна
+												</a>
+											</li>
+											<li class="menu__dropdown-item">
+												<a href="#" class="menu__dropdown-link">
+													Противопожарные перегородки
+												</a>
+											</li>
+											<li class="menu__dropdown-item">
+												<a href="#" class="menu__dropdown-link">
+													Aлюминиевые контструкции
+												</a>
+											</li>
+											<li class="menu__dropdown-item">
+												<a href="#" class="menu__dropdown-link">
+													Противопожарные фасады
+												</a>
+											</li>
+											<li class="menu__dropdown-item">
+												<a href="#" class="menu__dropdown-link">
+													Противопожарное стекло
+												</a>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">О компании</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Наши проекты</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Лицензии и сертификаты</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item menu__item--active">
+									<a href="#" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+
+							<button data-target="mobile-menu" class="menu__btn-menu btn-menu js-modal-btn" type="button">
+								<i class="btn-menu__bars" aria-hidden="true"></i>
+								<span class="visually-hidden">Menu</span>
+							</button>
+						</nav>
+
+						<form action="#" class="header__search header__cell search">
+							<button type="button" class="search__button js-search-button">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#search"></use>
+								</svg>
+							</button>
+
+							<button type="submit" class="search__button search__submit">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#search"></use>
+								</svg>
+							</button>
+
+							<div class="search__input-wrapper">
+								<input type="text" class="search__input" placeholder="Ведите запрос" required>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+        <main class="main">
+            <section class="section simple-page-section section__header-padding">
+                <div class="simple-page-section__site-container">
+                    <div class="section__breadcrumbs breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                <a href="#" class="breadcrumbs__link">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <h1 class="section__title section__title--left simple-page-section__title">
+                        <span class="_accent-color ">FAQ.</span> часто задаваемые вопросы
+                    </h1>
+                </div>
+
+                <div class="simple-page-section__content simple-page-section__content--faq">
+                    <div class="simple-page-section__site-container">
+
+						<ul class="faq__list">
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как проверить правильность подбора огнестойкости?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как сделать выбор профильной системы?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										Можно ли получить рекомендации по правильной сборке конструкций и узлам крепления при монтаже?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										чем отличается гост от сп?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как стать партнером СПК Дрейвинг?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как стать партнером СПК Дрейвинг?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как стать партнером СПК Дрейвинг?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как стать партнером СПК Дрейвинг?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как стать партнером СПК Дрейвинг?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+							<li class="faq__item">
+								<button class="faq__button">
+									<span class="faq__question">
+										как стать партнером СПК Дрейвинг?
+									</span>
+
+									<span class="faq__icon">
+										<svg class="icon">
+											<use xlink:href="./images/sprite.svg#plus"></use>
+										</svg>
+									</span>
+								</button>
+								<div class="faq__answer">
+									<span class="faq__text">
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+										Рыбатекст используется дизайнерами, проектировщиками и фронтендерами, когда нужно быстро
+										заполнить макеты или прототипы содержимым. Это тестовый контент, который не должен нести
+										никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле...
+									</span>
+								</div>
+							</li>
+						</ul>
+                    </div>
+                </div>
+            </section>
+
+			<section class="section callback">
+				<div class="callback__site-container">
+					<div class="callback__body">
+						<div class="callback__image-wrapper">
+							<div class="callback__image">
+								<img src="./images/callback/door.png" alt="">
+							</div>
+						</div>
+
+						<div class="callback__form-wrapper">
+							<div class="modal__heading">
+								<span class="modal__title">
+									Остались вопросы?
+								</span>
+
+								<span class="modal__subtitle">
+									Свяжитесь с нами, мы ответим на все!
+								</span>
+							</div>
+
+							<div class="modal__content">
+								<form action="#" class="callback-form">
+									<div class="callback-form__row">
+										<div class="callback-form__half">
+											<div class="callback-form__input-wrapper input-block">
+												<input type="text" class="input-block__input" placeholder="Ваше имя" data-required="Введите имя">
+											</div>
+										</div>
+
+										<div class="callback-form__half">
+											<div class="callback-form__input-wrapper input-block">
+												<input type="text" class="input-block__input" placeholder="ваша эл. почта" data-required="Введите почту">
+											</div>
+										</div>
+									</div>
+
+									<div class="callback-form__row">
+										<div class="callback-form__input-wrapper input-block">
+											<textarea type="text" class="input-block__input input-block__textarea" placeholder="напишите вопрос" data-required="напишите вопрос"></textarea>
+										</div>
+									</div>
+
+									<div class="callback-form__row">
+										<button type="button" class="callback-form__submit main-button js-btn-submit">
+											Отправить
+										</button>
+									</div>
+
+									<div class="callback-form__row">
+										<div class="callback-form__agreement">
+											<span>
+												Нажимая на кнопку «Отправить»,
+												вы даёте своё согласие на
+											</span>
+											<a href="#">
+												обработку персональных данных
+											</a>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+
+        <footer class="footer">
+			<div class="footer__over">
+				<div class="footer__site-container">
+					<div class="footer__heading footer__row">
+						<a href="/" class="footer__logo logo logo--bigger">
+							<svg class="icon">
+								<use xlink:href="./images/sprite.svg#logo-w"></use>
+							</svg>
+						</a>
+
+						<div class="footer__top-text second-type-text">
+							<p>
+								Проектирование, изготовление и монтаж противопожарных алюминиевых
+								светопрозрачных конструкций для строительных объектов
+							</p>
+						</div>
+					</div>
+
+					<div class="footer__menu footer__row">
+						<nav class="menu menu--footer">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="#" class="menu__link">Противопожарные конструкции</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">О компании</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Наши проекты</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Лицензии и сертификаты</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Отзывы</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">FAQ</a>
+								</li>
+								<li class="menu__item">
+									<a href="#" class="menu__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__row footer__row--stretch">
+						<div class="footer__cell">
+							<div class="footer__contacts contacts">
+								<h3 class="contacts__title">свяжитесь с нами:</h3>
+
+								<div class="contacts__col">
+									<ul class="contacts__list">
+										<li class="contacts__item">
+											<h4 class="contacts__subtitle h4-title">
+												единый номер
+											</h4>
+
+											<a href="tel:88005553268" class="contacts__link icon-link icon-link--bold">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#phone"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													8 800 555 32 68
+												</span>
+											</a>
+										</li>
+
+										<li class="contacts__item">
+											<h4 class="contacts__subtitle h4-title">
+												Отдел продаж
+											</h4>
+
+											<a href="tel:88432781097" class="contacts__link icon-link">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#phone"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													+7 (843) 278-10-97
+												</span>
+											</a>
+
+											<a href="tel:+78432781446" class="contacts__link icon-link">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#phone"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													+7 (843) 278-14-46
+												</span>
+											</a>
+
+											<a href="tel:+79178500055" class="contacts__link icon-link">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#tablet"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													+7 (917) 850-00-55
+												</span>
+											</a>
+										</li>
+
+										<li class="contacts__item">
+											<h4 class="contacts__subtitle h4-title">
+												Приёмная
+											</h4>
+
+											<a href="tel:+78432781078" class="contacts__link icon-link">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#phone"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													+7 (843) 278-10-78
+												</span>
+											</a>
+										</li>
+									</ul>
+
+									<ul class="contacts__list">
+										<li class="contacts__item">
+											<h4 class="contacts__subtitle h4-title">
+												адрес
+											</h4>
+
+											<a href="tel:88005553268" class="contacts__link icon-link icon-link--long-text">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#locmarker"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													<span>
+														420107, РТ, г. Казань,
+													</span>
+													<span>
+														ул. Салимжанова, д. 23
+													</span>
+												</span>
+											</a>
+										</li>
+
+										<li class="contacts__item">
+											<h4 class="contacts__subtitle h4-title">
+												Электронная почта
+											</h4>
+
+											<a href="mailto:drawing.567@reteller.ru" class="contacts__link icon-link icon-link--mail">
+												<span class="icon-link__icon">
+													<svg class="icon">
+														<use xlink:href="./images/sprite.svg#evenlop"></use>
+													</svg>
+												</span>
+												<span class="icon-link__text">
+													drawing.567@reteller.ru
+												</span>
+											</a>
+										</li>
+
+										<li class="contacts__item">
+											<button class="footer-button" type="button">
+												Заказать звонок
+											</button>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+
+						<div class="footer__cell">
+							<div class="footer__catalogs catalogs">
+								<h3 class="catalogs__title contacts__title h3-title">наша продукция:</h3>
+
+								<ul class="catalogs__list">
+									<li class="catalogs__item">
+										<a href="#" class="catalogs__link">
+											Противопожарные двери
+										</a>
+									</li>
+									<li class="catalogs__item">
+										<a href="#" class="catalogs__link">
+											Противопожарные окна
+										</a>
+									</li>
+									<li class="catalogs__item">
+										<a href="#" class="catalogs__link">
+											Противопожарные перегородки
+										</a>
+									</li>
+									<li class="catalogs__item">
+										<a href="#" class="catalogs__link">
+											Алюминиевые конструкции
+										</a>
+									</li>
+									<li class="catalogs__item">
+										<a href="#" class="catalogs__link">
+											Противопожарные фасады
+										</a>
+									</li>
+									<li class="catalogs__item">
+										<a href="#" class="catalogs__link">
+											Противопожарное стекло
+										</a>
+									</li>
+								</ul>
+
+								<a href="#" class="catalogs__button footer-button">
+									Смотреть каталог
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="footer__basement">
+				<div class="footer__site-container">
+					<div class="footer__basement-row">
+						<a href="#" class="footer__policy footer__copyright">
+							Политика конфиденциальности
+						</a>
+						<a href="#" class="footer__developer developer">
+							<span class="developer__text footer__copyright">
+								Разработано в
+							</span>
+							<span class="developer__logo">
+								<svg class="icon">
+									<use xlink:href="./images/sprite.svg#accent-logo"></use>
+								</svg>
+							</span>
+						</a>
+						<a class="footer__copyright ">
+							<span>
+								Копирайт © 2022 группа компаний «Дрейвинг»
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+    </div>
+
+
+    <div data-modal="callback" class="modal modal--callback">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__heading">
+                    <span class="modal__title">
+                        заказать звонок
+                    </span>
+
+                    <span class="modal__subtitle">
+                        Наш специалист свяжется с Вами<br> в течение 5 минут.
+                    </span>
+                </div>
+
+                <div class="modal__content">
+                    <form action="#" class="callback-form">
+                        <div class="callback-form__row">
+                            <div class="callback-form__input-wrapper input-block">
+                                <input type="text" class="input-block__input input-block__input--light" placeholder="Ваше имя" data-required="Введите имя">
+                            </div>
+                        </div>
+
+                        <div class="callback-form__row">
+                            <div class="callback-form__input-wrapper input-block">
+                                <input type="text" class="input-block__input input-block__input--light" placeholder="Номер телефона" data-required="Введите номер телефона">
+                            </div>
+                        </div>
+
+                        <div class="callback-form__row">
+                            <button type="button" class="callback-form__submit main-button js-btn-submit">
+                                Отправить
+                            </button>
+                        </div>
+
+                        <div class="callback-form__row">
+                            <div class="callback-form__agreement">
+                                <span>
+                                    Нажимая на кнопку «Отправить»,<br>
+                                    вы даёте своё согласие на
+                                </span>
+                                <a href="#">
+                                    обработку персональных данных
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="modal__close-button">
+                    <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#close-m"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal="question" class="modal modal--question">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__heading">
+                    <span class="modal__title">
+                        Задать вопрос
+                    </span>
+
+                    <span class="modal__subtitle">
+                        Заполните форму, мы ответим Вам по электронной почте.
+                    </span>
+                </div>
+
+                <div class="modal__content">
+                    <form action="#" class="callback-form">
+                        <div class="callback-form__row">
+                            <div class="callback-form__half">
+                                <div class="callback-form__input-wrapper input-block">
+                                    <input type="text" class="input-block__input" placeholder="Ваше имя" data-required="Введите имя">
+                                </div>
+                            </div>
+
+                            <div class="callback-form__half">
+                                <div class="callback-form__input-wrapper input-block">
+                                    <input type="text" class="input-block__input" placeholder="ваша эл. почта" data-required="Введите почту">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="callback-form__row">
+                            <div class="callback-form__input-wrapper input-block">
+                                <textarea type="text" class="input-block__input input-block__textarea" placeholder="напишите вопрос" data-required="напишите вопрос"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="callback-form__row">
+                            <button type="button" class="callback-form__submit main-button js-btn-submit">
+                                Отправить
+                            </button>
+                        </div>
+
+                        <div class="callback-form__row">
+                            <div class="callback-form__agreement">
+                                <span>
+                                    Нажимая на кнопку «Отправить»,
+                                    вы даёте своё согласие на
+                                </span>
+                                <a href="#">
+                                    обработку персональных данных
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <button class="modal__close-button">
+                    <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#close-m"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal="spec" class="modal modal--spec">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__heading">
+                    <span class="modal__title">
+                        СП 4.13130.2013
+                    </span>
+
+                    <span class="modal__subtitle">
+                        Краткая информация
+                    </span>
+                </div>
+
+                <div class="modal__content">
+                    <div class="modal__spec-text">
+                        <p>
+                            При пользовании настоящим сводом правил целесообразно
+                            проверить действие ссылочных стандартов, сводов правил
+                            и классификаторов в информационной системе общего
+                            пользования - на официальном сайте национального органа
+                            Российской Федерации по стандартизации в сети Интернет
+                            или по ежегодно издаваемому информационному указателю
+                            "Национальные стандарты", который опубликован по состоянию
+                            на 1 января текущего года, и по соответствующим ежемесячно
+                            издаваемым информационным указателям, опубликованным в текущем
+                            году. Если ссылочный документ заменен (изменен), то при
+                            пользовании настоящим стандартом следует руководствоваться
+                            замененным (измененным) документом. Если ссылочный документ
+                            отменен без замены, то положение, в котором дана ссылка на него,
+                            применяется в части, не затрагивающей эту ссылку.
+                        </p>
+                    </div>
+                </div>
+
+                <button class="modal__close-button">
+                    <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#close-m"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal="popup-callback" class="modal modal--popup">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__heading">
+                    <span class="modal__title">
+                        Спасибо<br> за обращение!
+                    </span>
+
+                    <span class="modal__subtitle">
+                        Наш специалист свяжется с Вами<br> в течение 5 минут.
+                    </span>
+                </div>
+
+                <div class="modal__content">
+
+
+                </div>
+
+                <button class="modal__close-button">
+                    <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#close-m"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal="popup-question" class="modal modal--popup">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__heading">
+                    <span class="modal__title">
+                        Спасибо<br> за ваш вопрос!
+                    </span>
+
+                    <span class="modal__subtitle">
+                        Мы ответим Вам<br>
+                        по электронной почте.
+                    </span>
+                </div>
+
+                <div class="modal__content">
+
+
+                </div>
+
+                <button class="modal__close-button">
+                    <svg class="icon">
+                        <use xlink:href="./images/sprite.svg#close-m"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div data-modal="mobile-menu" class="modal modal--mobile-menu">
+        <div class="modal__container">
+            <div class="modal__body">
+                <div class="modal__heading">
+                    <span class="modal__title">
+                        меню
+                    </span>
+                </div>
+
+                <div class="menu menu--modal">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item--dropdown">
+                            <a href="#" class="menu__link">Противопожарные конструкции</a>
+                            <div class="menu__dropdown">
+                                <ul class="menu__dropdown-list">
+                                    <li class="menu__dropdown-item">
+                                        <a href="#" class="menu__dropdown-link">
+                                            Противопожарные двери
+                                        </a>
+                                    </li>
+                                    <li class="menu__dropdown-item">
+                                        <a href="#" class="menu__dropdown-link">
+                                            Противопожарные окна
+                                        </a>
+                                    </li>
+                                    <li class="menu__dropdown-item">
+                                        <a href="#" class="menu__dropdown-link">
+                                            Противопожарные перегородки
+                                        </a>
+                                    </li>
+                                    <li class="menu__dropdown-item">
+                                        <a href="#" class="menu__dropdown-link">
+                                            Aлюминиевые контструкции
+                                        </a>
+                                    </li>
+                                    <li class="menu__dropdown-item">
+                                        <a href="#" class="menu__dropdown-link">
+                                            Противопожарные фасады
+                                        </a>
+                                    </li>
+                                    <li class="menu__dropdown-item">
+                                        <a href="#" class="menu__dropdown-link">
+                                            Противопожарное стекло
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Наши проекты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Лицензии и сертификаты</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Отзывы</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

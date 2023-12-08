@@ -1,0 +1,40 @@
+._uppercase {
+    text-transform: uppercase;
+}
+
+._white-color {
+    color: var(--white-color);
+}
+
+
+._accent-color {
+    color: var(--c-accent);
+}
+
+._block-scrolling {
+    overflow: hidden;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+
+input:focus:required:invalid, textarea:focus:required:invalid {
+    border-color: var(--c-accent);
+}
+
+input:required:valid, textarea:required:valid {
+    border-color: var(--c-heading);
+}
+
+.second-type-text {
+	font-weight: 400;
+	font-size: 1.6rem;
+	font-family: var(--second-ff);
+	line-height: 1.25;
+}

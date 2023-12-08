@@ -1,0 +1,28 @@
+.yamaps-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    background-color: var(--c-white);
+    border-radius: 100%;
+
+    filter: drop-shadow(4px 6px 30px rgba(26, 23, 23, 0.2));
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+}
+
+.yamaps-icon.yamaps-icon--hover {
+    background-color: var(--c-accent);
+}
+
+.yamaps-icon .icon {
+    width: 2.41rem;
+    height: 2.13rem;
+}
+
+.yamaps-icon:hover {
+    background-color: var(--c-accent);
+}
